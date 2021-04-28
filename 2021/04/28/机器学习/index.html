@@ -183,7 +183,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 28, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1796</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1748</span>
     </div>
   </div>
 </section>
@@ -194,29 +194,29 @@
 <p>常见的有监督算法：线性回归（linear_regression) ，BP神经网络算法，决策树，支持向量机（svm），KNN等</p>
 <p>Regression，Classification</p>
 <p>无监督学习：训练样本的标记信息未知， 目标是通过对无标记训练样本的学习来揭示数据的内在性质及规律，为进一步的数据分析提供基础，此类学习任务中研究最多、应用最广的是”聚类” (clustering)，聚类目的在于把相似的东西聚在一起，主要通过计算样本间和群体间距离得到。深度学习和PCA都属于无监督学习的范畴。</p>
-<p>无监督算法：密度估计**(densityestimation)<strong>、</strong>异常检测（anomaly detection)<strong>、</strong>层次聚类<strong>、</strong>EM算法<strong>、</strong>K-Means算法(K均值算法)<strong>、</strong>DBSCAN算法** 等</p>
+<p>无监督算法：密度估计 <strong>(densityestimation)<strong>、</strong>异常检测（anomaly detection)<strong>、</strong>层次聚类</strong>、<strong>EM算法</strong>、<strong>K-Means算法(K均值算法)<strong>、</strong>DBSCAN算法</strong> 等</p>
 <p>线性回归（Linear Regression）</p>
 <p>回归方程通用公式：<br>    f(x) = w1x1 + w2x2 + … + wnxn + b=wTx + b</p>
 <p>y（因变量）:目标值        x（自变量）：特征值</p>
 <p>损失函数：</p>
 <p>有n组数据，自变量x(x1,x2,…,xn)，因变量y(y1,y2,…,yn)，然后我们假设它们之间的关系是：f(x)=ax+b。那么线性回归的目标就是如何让f(x)和y之间的差异最小，换句话说就是a，b取什么值的时候f(x)和y最接近。<br>这里我们得先解决另一个问题，就是如何衡量f(x)和y之间的差异。在回归问题中，均方误差是回归任务中最常用的性能度量</p>
 <p>（通常是下文梯度下降提到的写法）</p>
-<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031225640628.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031225640628.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
 <p>i代表n组数据中的第i组。<br>这里称J(a,b)为损失函数，明显可以看出它是个二次函数，所以有最小值。当J(a,b)取最小值的时候，f(x)和y的差异最小，然后我们可以通过J(a,b)取最小值来确定a和b的值。</p>
 <p>介绍三种方法来确定a和b的值：</p>
 <p>1、最小二乘法</p>
 <p>既然损失函数J(a,b)是凸函数，那么分别关于a和b对J(a,b)求偏导，并令其为零解出a和b。这里直接给出结果：</p>
-<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031230145362.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
-<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2020103123020160.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031230145362.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2020103123020160.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
 <p>解得：</p>
-<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031231002725.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
-<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031230931899.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031231002725.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031230931899.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
 <p>2.梯度下降法</p>
 <p>梯度是微积分中一个很重要的概念，之前提到过梯度的意义</p>
-<p>在单变量的函数中，梯度其实就是函数的微分，代表着函数在某个给定点的切线的斜率<br>在多变量函数中，梯度是一个向量，向量有方向，梯度的方向就指出了函数在给定点的上升最快的方向<br>这也就说明了为什么我们需要千方百计的求取梯度！我们需要到达山底，就需要在每一步观测到此时最陡峭的地方，梯度就恰巧告诉了我们这个方向。梯度的方向是函数在给定点上升最快的方向，那么梯度的反方向就是函数在给定点下降最快的方向，这正是我们所需要的。所以我们只要沿着梯度的方向一直走，就能走到局部的最低点！<br><a href="/images/icons/1.jpg">例子</a></p>
+<p>在单变量的函数中，梯度其实就是函数的微分，代表着函数在某个给定点的切线的斜率<br>在多变量函数中，梯度是一个向量，向量有方向，梯度的方向就指出了函数在给定点的上升最快的方向<br>这也就说明了为什么我们需要千方百计的求取梯度！我们需要到达山底，就需要在每一步观测到此时最陡峭的地方，梯度就恰巧告诉了我们这个方向。梯度的方向是函数在给定点上升最快的方向，那么梯度的反方向就是函数在给定点下降最快的方向，这正是我们所需要的。所以我们只要沿着梯度的方向一直走，就能走到局部的最低点！<br><img   class="lazyload" data-original="/images/icons/1.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">例子</span></p>
 <p>3.正规方程法</p>
 <p>代价函数</p>
-<p><img   class="lazyload" data-original="http://latex.codecogs.com/gif.latex?J(%5Ctheta&space;_%7B0%7D,%5Ctheta&space;_%7B1%7D,%5Ccdots&space;,%5Ctheta&space;n)=%5Cfrac%7B1%7D%7B2m%7D%5Csum_%7Bm%7D%5E%7Bi=1%7D%5Cleft&space;(&space;h_%7B%5Ctheta%7D&space;%5Cleft&space;(&space;x%5E%7Bi%7D&space;%5Cright&space;)-y%5E%7B%5Cleft&space;(&space;i&space;%5Cright&space;)%7D&space;%5Cright&space;)%5E%7B2%7D" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">J(\theta _{0},\theta _{1},\cdots ,\theta n)=\frac{1}{2m}\sum_{m}^{i=1}\left ( h_{\theta} \left ( x^{i} \right )-y^{\left ( i \right )} \right )^{2}</span></p>
+<p>$$<br>J(\theta <em>{0},\theta <em>{1},\cdots ,\theta n)=\frac{1}{2m}\sum</em>{m}^{i=1}\left ( h</em>{\theta} \left ( x^{i} \right )-y^{\left ( i \right )} \right )^{2}<br>%%</p>
 <p>其中</p>
 <p><img   class="lazyload" data-original="http://latex.codecogs.com/gif.latex?h_%7B%5Ctheta&space;%7D%5Cleft&space;(&space;x&space;%5Cright&space;)=%5Ctheta&space;%5E%7BT%7DX=%5Ctheta&space;_%7B0%7Dx_%7B0%7D+%5Ctheta&space;_%7B1%7Dx_%7B1%7D+%5Ccdots&space;+%5Ctheta&space;_%7Bn%7Dx_%7Bn%7D" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">h_{\theta }\left ( x \right )=\theta ^{T}X=\theta _{0}x_{0}+\theta _{1}x_{1}+\cdots +\theta _{n}x_{n}</span></p>
 <p>求解方程得到参数</p>
