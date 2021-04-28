@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<html lang="en" color-mode=light>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>机器学习 - DAN</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  
+  <meta name="description" content="机器学习：从广义上来说，机器学习是一种能够赋予机器学习...">
+  <meta name="author" content="dan">
+  <link rel="icon" href="/images/icons/dan.jpg" type="image/png" sizes="16x16">
+  
+  
+  
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_s6x2xcokxrl.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+    
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
+
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
+
+      
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: false,
+      fancybox: true,
+      pjax: false,
+      lazyload: {
+        enable: true,
+        only_post: 'false',
+        loading: '/images/theme/loading.gif'
+      },
+      donate: {
+        enable: false,
+        alipay: '',
+        wechat: ''
+      },
+      galleries: {
+        enable: false
+      },
+      fab: {
+        enable: true,
+        always_show: false
+      },
+      carrier: {
+        enable: true
+      },
+      daovoice: {
+        enable: false
+      },
+      preview: {
+        background: {
+          default: '[object Object]',
+          api: 'https://source.unsplash.com/random/1920x1080'
+        },
+        motto: {
+          default: '我在开了灯的床头下，想问问自己的心啊。',
+          typing: true,
+          api: 'https://v1.hitokoto.cn/?encode=text&c=i',
+          data_contents: ''
+        },
+      },
+      qrcode: {
+        enable: false,
+        type: 'image',
+        image: '',
+      },
+      toc: {
+        enable: true
+      },
+      scrollbar: {
+        type: 'default'
+      },
+      notification: {
+        enable: false,
+        delay: 4500,
+        list: '',
+        page_white_list: '',
+        page_black_list: ''
+      }
+    }
+  </script>
+
+  
+
+  
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="lock-screen">
+  <div class="loading"></div>
+  
+    
+
+
+  <nav class="navbar">
+    <div class="left">
+      
+        <i class="iconfont iconhome j-navbar-back-home"></i>
+      
+      
+      
+        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
+      
+    </div>
+    <div class="center">机器学习</div>
+    <div class="right">
+      <i class="iconfont iconmenu j-navbar-menu"></i>
+    </div>
+    
+  </nav>
+
+  
+  
+
+<nav class="menu">
+  <div class="menu-wrap">
+    <div class="menu-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <ul class="menu-content"><li class="menu-item">
+        <a href="/ " class="underline "> 首页</a>
+      </li><li class="menu-item">
+        <a href="/galleries/ " class="underline "> 相册</a>
+      </li><li class="menu-item">
+        <a href="/archives/ " class="underline "> 归档</a>
+      </li><li class="menu-item">
+        <a href="/tags/ " class="underline "> 标签</a>
+      </li><li class="menu-item">
+        <a href="/categories/ " class="underline "> 分类</a>
+      </li><li class="menu-item">
+        <a href="/about/ " class="underline "> 关于</a>
+      </li></ul>
+    
+      <div class="menu-copyright">歪比巴卜</div>
+    
+  </div>
+</nav>
+  <main id="main">
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="/images/theme/4.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">机器学习</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 28, 2021</span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1796</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <p>机器学习：<strong>从广义上来说</strong>，机器学习是一种能够赋予机器学习的能力以此让它完成直接编程无法完成的功能的方法。<strong>但从实践的意义上来说，</strong> 机器学习是一种通过利用数据，训练出模型，然后使用模型预测的一种方法。</p>
+<p>有监督学习：通过<strong>已有的训练样本</strong>去训练得到一个<strong>最优模型</strong>，再利用这个模型将所有的输入映射为相应的输出，对输出进行简单的判断从而实现<strong>预测</strong>和<strong>分类</strong>的目的，也就具有了对未知数据进行预测和分类的能力。</p>
+<p>常见的有监督算法：线性回归（linear_regression) ，BP神经网络算法，决策树，支持向量机（svm），KNN等</p>
+<p>Regression，Classification</p>
+<p>无监督学习：训练样本的标记信息未知， 目标是通过对无标记训练样本的学习来揭示数据的内在性质及规律，为进一步的数据分析提供基础，此类学习任务中研究最多、应用最广的是”聚类” (clustering)，聚类目的在于把相似的东西聚在一起，主要通过计算样本间和群体间距离得到。深度学习和PCA都属于无监督学习的范畴。</p>
+<p>无监督算法：密度估计**(densityestimation)<strong>、</strong>异常检测（anomaly detection)<strong>、</strong>层次聚类<strong>、</strong>EM算法<strong>、</strong>K-Means算法(K均值算法)<strong>、</strong>DBSCAN算法** 等</p>
+<p>线性回归（Linear Regression）</p>
+<p>回归方程通用公式：<br>    f(x) = w1x1 + w2x2 + … + wnxn + b=wTx + b</p>
+<p>y（因变量）:目标值        x（自变量）：特征值</p>
+<p>损失函数：</p>
+<p>有n组数据，自变量x(x1,x2,…,xn)，因变量y(y1,y2,…,yn)，然后我们假设它们之间的关系是：f(x)=ax+b。那么线性回归的目标就是如何让f(x)和y之间的差异最小，换句话说就是a，b取什么值的时候f(x)和y最接近。<br>这里我们得先解决另一个问题，就是如何衡量f(x)和y之间的差异。在回归问题中，均方误差是回归任务中最常用的性能度量</p>
+<p>（通常是下文梯度下降提到的写法）</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031225640628.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>i代表n组数据中的第i组。<br>这里称J(a,b)为损失函数，明显可以看出它是个二次函数，所以有最小值。当J(a,b)取最小值的时候，f(x)和y的差异最小，然后我们可以通过J(a,b)取最小值来确定a和b的值。</p>
+<p>介绍三种方法来确定a和b的值：</p>
+<p>1、最小二乘法</p>
+<p>既然损失函数J(a,b)是凸函数，那么分别关于a和b对J(a,b)求偏导，并令其为零解出a和b。这里直接给出结果：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031230145362.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2020103123020160.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>解得：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031231002725.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031230931899.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>2.梯度下降法</p>
+<p>梯度是微积分中一个很重要的概念，之前提到过梯度的意义</p>
+<p>在单变量的函数中，梯度其实就是函数的微分，代表着函数在某个给定点的切线的斜率<br>在多变量函数中，梯度是一个向量，向量有方向，梯度的方向就指出了函数在给定点的上升最快的方向<br>这也就说明了为什么我们需要千方百计的求取梯度！我们需要到达山底，就需要在每一步观测到此时最陡峭的地方，梯度就恰巧告诉了我们这个方向。梯度的方向是函数在给定点上升最快的方向，那么梯度的反方向就是函数在给定点下降最快的方向，这正是我们所需要的。所以我们只要沿着梯度的方向一直走，就能走到局部的最低点！<br><a href="/images/icons/1.jpg">例子</a></p>
+<p>3.正规方程法</p>
+<p>代价函数</p>
+<p><img   class="lazyload" data-original="http://latex.codecogs.com/gif.latex?J(%5Ctheta&space;_%7B0%7D,%5Ctheta&space;_%7B1%7D,%5Ccdots&space;,%5Ctheta&space;n)=%5Cfrac%7B1%7D%7B2m%7D%5Csum_%7Bm%7D%5E%7Bi=1%7D%5Cleft&space;(&space;h_%7B%5Ctheta%7D&space;%5Cleft&space;(&space;x%5E%7Bi%7D&space;%5Cright&space;)-y%5E%7B%5Cleft&space;(&space;i&space;%5Cright&space;)%7D&space;%5Cright&space;)%5E%7B2%7D" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">J(\theta _{0},\theta _{1},\cdots ,\theta n)=\frac{1}{2m}\sum_{m}^{i=1}\left ( h_{\theta} \left ( x^{i} \right )-y^{\left ( i \right )} \right )^{2}</span></p>
+<p>其中</p>
+<p><img   class="lazyload" data-original="http://latex.codecogs.com/gif.latex?h_%7B%5Ctheta&space;%7D%5Cleft&space;(&space;x&space;%5Cright&space;)=%5Ctheta&space;%5E%7BT%7DX=%5Ctheta&space;_%7B0%7Dx_%7B0%7D+%5Ctheta&space;_%7B1%7Dx_%7B1%7D+%5Ccdots&space;+%5Ctheta&space;_%7Bn%7Dx_%7Bn%7D" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">h_{\theta }\left ( x \right )=\theta ^{T}X=\theta _{0}x_{0}+\theta _{1}x_{1}+\cdots +\theta _{n}x_{n}</span></p>
+<p>求解方程得到参数</p>
+<p><img   class="lazyload" data-original="http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial&space;%7D%7B%5Cpartial&space;%5Ctheta&space;_%7Bj%7D%7DJ(%5Ctheta&space;_%7Bj%7D)=0" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">\frac{\partial }{\partial \theta _{j}}J(\theta _{j})=0</span></p>
+<p><strong>最终可得特征参数的表示：</strong></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdn.net/20171012223750698?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlbmxpbjQxMjA0MDUw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">这里写图片描述</span></p>
+<p>只适用于线性模型，不适合逻辑回归模型等其他模型</p>
+<p>只要特征变量的数目并不大，标准方程是一个很好的计算参数的替代方法。具体地说，只要特征变量数量小于一万，通常使用标准方程法，而不使用梯度下降法。</p>
+
+      </section>
+      <section class="extra">
+        
+        
+        
+        
+  <nav class="nav">
+    <a></a>
+    <a href="/2021/04/17/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">数学公式<i class="iconfont iconright"></i></a>
+  </nav>
+
+      </section>
+      
+        <section class="comments">
+  
+    <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk" class="gitalk"></div>
+<script defer src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  window.onload = function () {
+    var gitalk = new Gitalk({
+      clientID: 'a16bdc09910ca579ff66',
+      clientSecret: '086f27f5afd7d2a31a81274b510ee927003db357',
+      id: window.location.pathname,
+      repo: 'pikapi111.github.io',
+      owner: 'pikapi111',
+      admin: 'pikapi111'
+    });
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        gitalk.render('gitalk');
+      });
+    } else {
+      gitalk.render('gitalk');
+    }
+  }
+</script>
+
+</section>
+      
+    </section>
+  </div>
+</article></div>
+      <div class="col-xl-3">
+        
+          
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    
+  </aside>
+
+        
+      </div>
+    </div>
+  </div>
+</main>
+  
+
+<footer class="footer">
+  <div class="footer-social"><a 
+        href="tencent://message/?Menu=yes&uin=1079332052 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#12B7F5'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconQQ "></i>
+      </a><a 
+        href="javascript:爬; "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#09BB07'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconwechat-fill "></i>
+      </a><a 
+        href="https://github.com/pikapi111 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= " 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icongithub-fill "></i>
+      </a><a 
+        href="mailto:1079332052@qq.com"
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color=#FF3B00" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont iconmail"></i>
+      </a></div>
+  
+    <div class="footer-copyright">歪比巴卜</div>
+  
+</footer>
+  
+      <div class="fab fab-plus">
+    <i class="iconfont iconplus"></i>
+  </div>
+  
+  
+  <div class="fab fab-up">
+    <i class="iconfont iconcaret-up"></i>
+  </div>
+  
+  
+  
+    
+<script src="/js/color-mode.js"></script>
+
+  
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="/js/utils.js"></script>
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
