@@ -183,7 +183,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 28, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>3585</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>5811</span>
     </div>
   </div>
 </section>
@@ -195,12 +195,15 @@
 <p>Regression，Classification</p>
 <p>无监督学习：训练样本的标记信息未知， 目标是通过对无标记训练样本的学习来揭示数据的内在性质及规律，为进一步的数据分析提供基础，此类学习任务中研究最多、应用最广的是”聚类” (clustering)，聚类目的在于把相似的东西聚在一起，主要通过计算样本间和群体间距离得到。深度学习和PCA都属于无监督学习的范畴。</p>
 <p>无监督算法：密度估计 <strong>(densityestimation)<strong>、</strong>异常检测（anomaly detection)<strong>、</strong>层次聚类</strong>、<strong>EM算法</strong>、<strong>K-Means算法(K均值算法)<strong>、</strong>DBSCAN算法</strong> 等</p>
+<p>半监督学习：</p>
+<p>强化学习：</p>
 <h2 id="线性回归（Linear-Regression）"><a href="#线性回归（Linear-Regression）" class="headerlink" title="线性回归（Linear Regression）"></a>线性回归（Linear Regression）</h2><p>回归方程通用公式：<br>    f(x) = w1x1 + w2x2 + … + wnxn + b=wTx + b</p>
 <p>y（因变量）:目标值        x（自变量）：特征值</p>
 <h3 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h3><p>有n组数据，自变量x(x1,x2,…,xn)，因变量y(y1,y2,…,yn)，然后我们假设它们之间的关系是：f(x)=ax+b。那么线性回归的目标就是如何让f(x)和y之间的差异最小，换句话说就是a，b取什么值的时候f(x)和y最接近。<br>这里得先解决另一个问题，就是如何衡量f(x)和y之间的差异。在回归问题中，均方误差是回归任务中最常用的性能度量</p>
 <p>（通常是下文梯度下降提到的写法）</p>
-<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031225640628.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
-<p>i代表n组数据中的第i组。<br>这里称J(a,b)为损失函数，明显可以看出它是个二次函数，所以有最小值。当J(a,b)取最小值的时候，f(x)和y的差异最小，然后我们可以通过J(a,b)取最小值来确定a和b的值。</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031225640628.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><br>MATHJAX-SSR-0<br>正则化</p>
+<p>i代表n组数据中的第i组。</p>
+<p>这里称J(a,b)为损失函数，明显可以看出它是个二次函数，所以有最小值。当J(a,b)取最小值的时候，f(x)和y的差异最小，然后我们可以通过J(a,b)取最小值来确定a和b的值。</p>
 <p>介绍三种方法来确定a和b的值：</p>
 <h3 id="1、最小二乘法"><a href="#1、最小二乘法" class="headerlink" title="1、最小二乘法"></a>1、最小二乘法</h3><p>既然损失函数J(a,b)是凸函数，那么分别关于a和b对J(a,b)求偏导，并令其为零解出a和b。这里直接给出结果：</p>
 <p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031230145362.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
@@ -617,7 +620,105 @@
 <p>​        <img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2018111022143681.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTQ0NTU1Ng==,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
 <p>得到的这个函数越大,证明我们得到的W就越好.因为在函数最优化的时候习惯让一个函数越小越好,所以我们在前边加一个负号.得到公式如下:</p>
 <p>​        <img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20181110222213701.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
-<p> 这个函数就是我们逻辑回归(logistics regression)的损失函数,我们叫它交叉熵损失函数.</p>
+<p style="text-align:center"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="55.386ex" height="5.176ex" style="vertical-align: -1.838ex;" viewbox="0 -1437.2 23846.7 2228.5" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">J(\theta)=-[\frac{1}{m}y^{(i)}logh_{\theta}(x^{(i)})+(1-y^{(i)})log(1-h_{\theta}(x^{(i)}))]</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-4A" d="M447 625Q447 637 354 637H329Q323 642 323 645T325 664Q329 677 335 683H352Q393 681 498 681Q541 681 568 681T605 682T619 682Q633 682 633 672Q633 670 630 658Q626 642 623 640T604 637Q552 637 545 623Q541 610 483 376Q420 128 419 127Q397 64 333 21T195 -22Q137 -22 97 8T57 88Q57 130 80 152T132 174Q177 174 182 130Q182 98 164 80T123 56Q115 54 115 53T122 44Q148 15 197 15Q235 15 271 47T324 130Q328 142 387 380T447 625Z"/>
+<path stroke-width="1" id="E1-MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+<path stroke-width="1" id="E1-MJMATHI-3B8" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"/>
+<path stroke-width="1" id="E1-MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+<path stroke-width="1" id="E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/>
+<path stroke-width="1" id="E1-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/>
+<path stroke-width="1" id="E1-MJMAIN-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"/>
+<path stroke-width="1" id="E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+<path stroke-width="1" id="E1-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+<path stroke-width="1" id="E1-MJMATHI-79" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+<path stroke-width="1" id="E1-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"/>
+<path stroke-width="1" id="E1-MJMATHI-6C" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"/>
+<path stroke-width="1" id="E1-MJMATHI-6F" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"/>
+<path stroke-width="1" id="E1-MJMATHI-67" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
+<path stroke-width="1" id="E1-MJMATHI-68" d="M137 683Q138 683 209 688T282 694Q294 694 294 685Q294 674 258 534Q220 386 220 383Q220 381 227 388Q288 442 357 442Q411 442 444 415T478 336Q478 285 440 178T402 50Q403 36 407 31T422 26Q450 26 474 56T513 138Q516 149 519 151T535 153Q555 153 555 145Q555 144 551 130Q535 71 500 33Q466 -10 419 -10H414Q367 -10 346 17T325 74Q325 90 361 192T398 345Q398 404 354 404H349Q266 404 205 306L198 293L164 158Q132 28 127 16Q114 -11 83 -11Q69 -11 59 -2T48 16Q48 30 121 320L195 616Q195 629 188 632T149 637H128Q122 643 122 645T124 664Q129 683 137 683Z"/>
+<path stroke-width="1" id="E1-MJMATHI-78" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+<path stroke-width="1" id="E1-MJMAIN-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"/>
+<path stroke-width="1" id="E1-MJMAIN-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"/>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-4A" x="0" y="0"/>
+ <use xlink:href="#E1-MJMAIN-28" x="633" y="0"/>
+ <use xlink:href="#E1-MJMATHI-3B8" x="1023" y="0"/>
+ <use xlink:href="#E1-MJMAIN-29" x="1492" y="0"/>
+ <use xlink:href="#E1-MJMAIN-3D" x="2159" y="0"/>
+ <use xlink:href="#E1-MJMAIN-2212" x="3216" y="0"/>
+ <use xlink:href="#E1-MJMAIN-5B" x="3994" y="0"/>
+<g transform="translate(4273,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="998" height="60" x="0" y="220"/>
+ <use xlink:href="#E1-MJMAIN-31" x="249" y="676"/>
+ <use xlink:href="#E1-MJMATHI-6D" x="60" y="-686"/>
+</g>
+</g>
+<g transform="translate(5511,0)">
+ <use xlink:href="#E1-MJMATHI-79" x="0" y="0"/>
+<g transform="translate(499,412)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-28" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-69" x="389" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-29" x="734" y="0"/>
+</g>
+</g>
+ <use xlink:href="#E1-MJMATHI-6C" x="6906" y="0"/>
+ <use xlink:href="#E1-MJMATHI-6F" x="7204" y="0"/>
+ <use xlink:href="#E1-MJMATHI-67" x="7690" y="0"/>
+<g transform="translate(8170,0)">
+ <use xlink:href="#E1-MJMATHI-68" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-3B8" x="815" y="-219"/>
+</g>
+ <use xlink:href="#E1-MJMAIN-28" x="9179" y="0"/>
+<g transform="translate(9568,0)">
+ <use xlink:href="#E1-MJMATHI-78" x="0" y="0"/>
+<g transform="translate(572,412)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-28" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-69" x="389" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-29" x="734" y="0"/>
+</g>
+</g>
+ <use xlink:href="#E1-MJMAIN-29" x="11036" y="0"/>
+ <use xlink:href="#E1-MJMAIN-2B" x="11648" y="0"/>
+ <use xlink:href="#E1-MJMAIN-28" x="12648" y="0"/>
+ <use xlink:href="#E1-MJMAIN-31" x="13038" y="0"/>
+ <use xlink:href="#E1-MJMAIN-2212" x="13761" y="0"/>
+<g transform="translate(14761,0)">
+ <use xlink:href="#E1-MJMATHI-79" x="0" y="0"/>
+<g transform="translate(499,412)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-28" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-69" x="389" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-29" x="734" y="0"/>
+</g>
+</g>
+ <use xlink:href="#E1-MJMAIN-29" x="16156" y="0"/>
+ <use xlink:href="#E1-MJMATHI-6C" x="16546" y="0"/>
+ <use xlink:href="#E1-MJMATHI-6F" x="16844" y="0"/>
+ <use xlink:href="#E1-MJMATHI-67" x="17330" y="0"/>
+ <use xlink:href="#E1-MJMAIN-28" x="17810" y="0"/>
+ <use xlink:href="#E1-MJMAIN-31" x="18200" y="0"/>
+ <use xlink:href="#E1-MJMAIN-2212" x="18922" y="0"/>
+<g transform="translate(19923,0)">
+ <use xlink:href="#E1-MJMATHI-68" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-3B8" x="815" y="-219"/>
+</g>
+ <use xlink:href="#E1-MJMAIN-28" x="20932" y="0"/>
+<g transform="translate(21321,0)">
+ <use xlink:href="#E1-MJMATHI-78" x="0" y="0"/>
+<g transform="translate(572,412)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-28" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-69" x="389" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-29" x="734" y="0"/>
+</g>
+</g>
+ <use xlink:href="#E1-MJMAIN-29" x="22789" y="0"/>
+ <use xlink:href="#E1-MJMAIN-29" x="23178" y="0"/>
+ <use xlink:href="#E1-MJMAIN-5D" x="23568" y="0"/>
+</g>
+</svg><br> 这个函数就是我们逻辑回归(logistics regression)的损失函数,我们叫它交叉熵损失函数.</p>
 <h3 id="求解交叉熵损失函数"><a href="#求解交叉熵损失函数" class="headerlink" title="求解交叉熵损失函数"></a>求解交叉熵损失函数</h3><p>求解步骤如下:</p>
 <p>1-随机一组W.</p>
 <p> 2-将W带入交叉熵损失函数,让得到的点沿着负梯度的方向移动.</p>
@@ -669,7 +770,47 @@
  <use xlink:href="#E1-MJMATHI-58" x="4238" y="0"/>
 </g>
 </svg></p>
+<h1 id="过拟合问题"><a href="#过拟合问题" class="headerlink" title="过拟合问题"></a>过拟合问题</h1><p>拟合（Fitting）：就是说这个曲线能不能很好的描述某些样本，并且有比较好的泛化能力。</p>
+<p>过拟合（Overfitting）：就是太过贴近于训练数据的特征了，在训练集上表现非常优秀，近乎完美的预测/区分了所有的数据，但是在新的测试集上却表现平平，不具泛化性，拿到新样本后没有办法去准确的判断。</p>
+<p>解决过拟合</p>
+<p>1.获取和使用更多的数据集</p>
+<p>对于解决过拟合的办法就是给与足够多的数据集，让模型在更可能多的数据上进行“观察”和拟合，从而不断修正自己。然而事实上，收集无限多的数据集几乎是不可能的，因此一个常用的办法就是调整已有的数据，添加大量的“噪音”，或者对图像进行锐化、旋转、明暗度调整等优化。</p>
+<p>另外补充一句，CNN在图像识别的过程中有强大的“不变性”规则，即待辨识的物体在图像中的形状、姿势、位置、明暗度都不会影响分类结果。</p>
+<p>2.采用合适的模型</p>
+<p>目前来说，针对不同的情况和分类要求，对使用的模型也是千差万别。过于复杂的模型会带来过拟合问题。</p>
+<p>对于模型的设计，目前公认的一个深度学习规律“deeper is better”。国内外各种大牛通过实验和竞赛发现，对于CNN来说，层数越多效果越好，但是也更容易产生过拟合，并且计算所耗费的时间也越长。因此对于模型的设计需要合理参考各种模型的取舍。</p>
+<p>3.使用 Dropout</p>
+<p>Dropout 是一个非常有用和常用的方法。Dropout 指的是在训练过程中每次按一定的几率关闭或忽略某些层的节点。使得模型在使用同样的数据进行训练时相当于从不同的模型中随机选择一个进行训练。</p>
+<p>至于 Dropout 起作用的原因，可以简单理解成在训练过程中会产生不同的训练模型，不同的训练模型也会产生不同的的计算结果，随着训练的不断进行，计算结果会在一个范围内波动，但是均值却不会有很大变化，因此可以把最终的训练结果看作是不同模型的平均输出。</p>
+<p>随机失活</p>
+<p>4.正则化（regularization）</p>
+<p>正则化又称为权重衰减，具体做法是将权值的大小加入到损失函数中，在实际使用中分为 L1 正则与 L2 正则。关于正则化能够防止过拟合的原因，笔者会在下一篇博客中专门花篇幅详细讲解。</p>
+<p>5.Early Stopping</p>
+<p>Early Stopping 是参数微调中的一种，即在每个循环结束一次以后（这里的循环可能是 full data batch,也可能是 mini batch size），计算模型的准确率（accuracy）。当准确率不再增加时就停止训练。</p>
+<p>这是一种非常简单和自然的办法，准确率不再增加时就停止训练，防止模型对已有的数据继续训练。但是问题在于，准确率在每个循环之后的计算是变化的，没有任何人和任何模型能保证准确率不会变化，可能某次循环结束后，准确率很高，但是下一轮结束后准确率又降得很低。</p>
+<p>这里笔者建议的一个办法是人为地设定一个范围。当连续10次准确率在此范围内波动时就停止循环。</p>
+<p>6.可变化的学习率</p>
+<p>可变化的学习率也是根据模型计算出的准确率进行调整。一个简单的方法是在人为设定的准确率范围内，达到10次范围内的波动后，依次将学习率减半，直到最终的学习率降为原始的 1/1024 时停止模型的训练。</p>
+<p>7.使用 Batch_Normalization</p>
+<p>还有一个数据处理的方法 Batch_Normalization，即数据在经过卷积层之后，真正进入激活函数之前需要对其进行一次 Batch_Normalization，分批对输入的数据求取均值和方差之后重新对数据进行归一化计算。</p>
+<p>这样做的好处就是对数据进行一定程度的预处理，使得无论是训练集还是测试集都在一定范围内进行分布和波动，对数据点中包含的误差进行掩盖化处理，从而增大模型的泛化能力。</p>
+<p>8.其他<br>除了上述提到的方法，还有常用的是交叉验证、PCA特征提取、增加各种噪音等。这样实际上还是属于增加了数据集，增加数据集是解决过拟合的根本性方法。除此之外对于模型来说，尽量选择较为简单的模型也是解决过拟合的一个常用方法。</p>
+<h1 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h1><p>神经元</p>
+<p>单层神经网络（感知机）</p>
+<p>两层神经网络（多层感知机）</p>
+<p>多层神经网络（深度学习）</p>
+<p>懒得过多解释</p>
+<h2 id="正向传播和反向传播"><a href="#正向传播和反向传播" class="headerlink" title="正向传播和反向传播"></a>正向传播和反向传播</h2><pre><code>1) 正向传播FP(求损失).在这个过程中,我们根据输入的样本,给定的初始化权重值W和偏置项的值b, 计算最终输出值以及输出值与实际值之间的损失值.如果损失值不在给定的范围内则进行反向传播的过程; 否则停止W,b的更新.
 
+2) 反向传播BP(回传误差).将输出以某种形式通过隐层向输入层逐层反传,并将误差分摊给各层的所有单元，从而获得各层单元的误差信号,此误差信号即作为修正各单元权值的依据。
+</code></pre>
+<p>梯度检测</p>
+<p>随机初始化</p>
+<h1 id="评估标准"><a href="#评估标准" class="headerlink" title="评估标准"></a>评估标准</h1><p>评估假设</p>
+<p>训练，验证和测试</p>
+<p>偏差和方差</p>
+<p>学习曲线</p>
+<h1 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h1><h1 id="聚类"><a href="#聚类" class="headerlink" title="聚类"></a>聚类</h1><h1 id="降维"><a href="#降维" class="headerlink" title="降维"></a>降维</h1>
       </section>
       <section class="extra">
         
@@ -722,7 +863,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="toc-text">机器学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%EF%BC%88Linear-Regression%EF%BC%89"><span class="toc-text">线性回归（Linear Regression）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="toc-text">损失函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95"><span class="toc-text">1、最小二乘法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95"><span class="toc-text">2.梯度下降法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%AD%A3%E8%A7%84%E6%96%B9%E7%A8%8B%E6%B3%95"><span class="toc-text">3.正规方程法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%EF%BC%88Logistic-Regression%EF%BC%89"><span class="toc-text">逻辑回归（Logistic Regression）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E5%BD%92%E5%87%BD%E6%95%B0"><span class="toc-text">回归函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E5%AE%9A%E9%98%88%E5%80%BC"><span class="toc-text">选定阈值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1"><span class="toc-text">最大似然估计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%82%E8%A7%A3%E4%BA%A4%E5%8F%89%E7%86%B5%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="toc-text">求解交叉熵损失函数</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="toc-text">机器学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%EF%BC%88Linear-Regression%EF%BC%89"><span class="toc-text">线性回归（Linear Regression）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="toc-text">损失函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95"><span class="toc-text">1、最小二乘法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95"><span class="toc-text">2.梯度下降法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%AD%A3%E8%A7%84%E6%96%B9%E7%A8%8B%E6%B3%95"><span class="toc-text">3.正规方程法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%EF%BC%88Logistic-Regression%EF%BC%89"><span class="toc-text">逻辑回归（Logistic Regression）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E5%BD%92%E5%87%BD%E6%95%B0"><span class="toc-text">回归函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E5%AE%9A%E9%98%88%E5%80%BC"><span class="toc-text">选定阈值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1"><span class="toc-text">最大似然估计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%82%E8%A7%A3%E4%BA%A4%E5%8F%89%E7%86%B5%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="toc-text">求解交叉熵损失函数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%87%E6%8B%9F%E5%90%88%E9%97%AE%E9%A2%98"><span class="toc-text">过拟合问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"><span class="toc-text">神经网络</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%90%91%E4%BC%A0%E6%92%AD%E5%92%8C%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD"><span class="toc-text">正向传播和反向传播</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%84%E4%BC%B0%E6%A0%87%E5%87%86"><span class="toc-text">评估标准</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SVM"><span class="toc-text">SVM</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%81%9A%E7%B1%BB"><span class="toc-text">聚类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%99%8D%E7%BB%B4"><span class="toc-text">降维</span></a>
   </aside>
 
         
