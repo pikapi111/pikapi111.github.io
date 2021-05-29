@@ -183,7 +183,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 28, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>5811</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>5820</span>
     </div>
   </div>
 </section>
@@ -201,7 +201,7 @@
 <p>y（因变量）:目标值        x（自变量）：特征值</p>
 <h3 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h3><p>有n组数据，自变量x(x1,x2,…,xn)，因变量y(y1,y2,…,yn)，然后我们假设它们之间的关系是：f(x)=ax+b。那么线性回归的目标就是如何让f(x)和y之间的差异最小，换句话说就是a，b取什么值的时候f(x)和y最接近。<br>这里得先解决另一个问题，就是如何衡量f(x)和y之间的差异。在回归问题中，均方误差是回归任务中最常用的性能度量</p>
 <p>（通常是下文梯度下降提到的写法）</p>
-<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031225640628.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><br>MATHJAX-SSR-0<br>正则化</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20201031225640628.png#pic_center" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><br>MATHJAX-SSR-0<br>正则化的线性回归损失函数</p>
 <p>i代表n组数据中的第i组。</p>
 <p>这里称J(a,b)为损失函数，明显可以看出它是个二次函数，所以有最小值。当J(a,b)取最小值的时候，f(x)和y的差异最小，然后我们可以通过J(a,b)取最小值来确定a和b的值。</p>
 <p>介绍三种方法来确定a和b的值：</p>
