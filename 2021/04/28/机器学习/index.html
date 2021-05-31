@@ -183,7 +183,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 28, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>6115</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>6111</span>
     </div>
   </div>
 </section>
@@ -923,10 +923,12 @@
 <p>两层神经网络（多层感知机）</p>
 <p>多层神经网络（深度学习）</p>
 <p>懒得过多解释</p>
-<h2 id="正向传播和反向传播"><a href="#正向传播和反向传播" class="headerlink" title="正向传播和反向传播"></a>正向传播和反向传播</h2><pre><code>1) 正向传播FP(求损失).在这个过程中,我们根据输入的样本,给定的初始化权重值W和偏置项的值b, 计算最终输出值以及输出值与实际值之间的损失值.如果损失值不在给定的范围内则进行反向传播的过程; 否则停止W,b的更新.
-
-2) 反向传播BP(回传误差).将输出以某种形式通过隐层向输入层逐层反传,并将误差分摊给各层的所有单元，从而获得各层单元的误差信号,此误差信号即作为修正各单元权值的依据。
-</code></pre>
+<h2 id="正向传播和反向传播"><a href="#正向传播和反向传播" class="headerlink" title="正向传播和反向传播"></a>正向传播和反向传播</h2><ol>
+<li><p>正向传播FP(求损失).在这个过程中,我们根据输入的样本,给定的初始化权重值W和偏置项的值b, 计算最终输出值以及输出值与实际值之间的损失值.如果损失值不在给定的范围内则进行反向传播的过程; 否则停止W,b的更新.</p>
+</li>
+<li><p>反向传播BP(回传误差).将输出以某种形式通过隐层向输入层逐层反传,并将误差分摊给各层的所有单元，从而获得各层单元的误差信号,此误差信号即作为修正各单元权值的依据。</p>
+</li>
+</ol>
 <p>梯度检测</p>
 <p>随机初始化</p>
 <h1 id="评估标准"><a href="#评估标准" class="headerlink" title="评估标准"></a>评估标准</h1><p>评估假设</p>
