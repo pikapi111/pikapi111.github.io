@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>计算机网络 - DAN</title>
+  <title> - DAN</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  <meta name="description" content="第一章 概述重要内容  互联网边缘部分和核心部分的作用...">
+  <meta name="description" content="网络1.对网络的基础认识&lt;1&gt;.组网方式1...">
   <meta name="author" content="dan">
   <link rel="icon" href="/images/icons/dan.jpg" type="image/png" sizes="16x16">
   
@@ -117,32 +117,13 @@
 
   
 
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="lock-screen">
   <div class="loading"></div>
   
     
 
-
-  <nav class="navbar">
-    <div class="left">
-      
-        <i class="iconfont iconhome j-navbar-back-home"></i>
-      
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-    </div>
-    <div class="center">计算机网络</div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
-    </div>
-    
-  </nav>
 
   
   
@@ -177,566 +158,268 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/theme/7.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/images/theme/1.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">计算机网络</h1>
+    <h1 class="head-title"></h1>
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>June 30, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>14955</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>14979</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        <h2 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h2><h3 id="重要内容"><a href="#重要内容" class="headerlink" title="重要内容"></a>重要内容</h3><p>  互联网边缘部分和核心部分的作用，以及分组交换的概念</p>
-<p>  计算机网络的性能指标</p>
-<p>  计算机网络的分层次的体系结构的概念，协议和服务的概念，</p>
-<h3 id="计算机网络的一些相关知识"><a href="#计算机网络的一些相关知识" class="headerlink" title="计算机网络的一些相关知识"></a>计算机网络的一些相关知识</h3><p>三网——电信网络，有线电视网络，计算机网络</p>
-<p>网络融合——将三种网络的功能融合在一起</p>
-<p>计算机网络：也是一种通信基础设施，与其他两种网络不同的是计算机网络的端设备是功能强大的计算机</p>
-<p>计算机网络的两个重要的功能：连通和共享</p>
-<h3 id="互联网概述"><a href="#互联网概述" class="headerlink" title="互联网概述"></a>互联网概述</h3><p>网络，互连（非“联”）网，因特网的概念</p>
-<p>起源于美国的因特网现在是世界上最大的国际性计算机网络</p>
-<p>网络由若干节点和连接这些节点的链路组成（节点可以是计算机，集线器，交换机，路由器等）</p>
-<p>网络和网络之间通过路由器连接起来，构成了互连网——即网络的网络</p>
-<p>因此，网络把许多计算机连接在一起，互连网将许多网络连接在一起</p>
-<h3 id="因特网发展的三个阶段——"><a href="#因特网发展的三个阶段——" class="headerlink" title="因特网发展的三个阶段——"></a>因特网发展的三个阶段——</h3><p>第一阶段：单网络ARANET——1969年美国国防部建立的第一个分组交换网</p>
-<p>第二阶段：三级结构的因特网——主干网，地区网，校园网</p>
-<p>第三阶段: 多层次IPS（因特网服务提供者）结构的因特网</p>
-<p>因特网交换点IXP——（更快的转发分组，更有效地利用网络资源）允许两个网络直接相连并交换分组，不需要其他网络来转发分组，IXP常采用工作在数据链路层的网络交换机，这些网络交换机都用局域网互连起来（典型的IXP由一个或多个网络交换机组成，）</p>
-<p>因特网的标准化工作<br>所有的互联网标准都是以RFC的形式在互联网上发表的</p>
-<p>ISOC——因特网协会</p>
-<p>IAB——因特网体系结构委员会</p>
-<p>IETF</p>
-<p>IRTF</p>
-<h3 id="互联网的组成"><a href="#互联网的组成" class="headerlink" title="互联网的组成"></a>互联网的组成</h3><p>  边缘部分（用户直接使用的主机），</p>
-<p>  核心部分(路由器，为边缘部分提供服务）</p>
-<p>边缘部分：端系统之间的通信可以分为两种方式——客户/服务器方式（CS方式），对等方式（P2P方式）（第六章 6.9节）               </p>
-<p>核心部分：向网络边缘部分的主机提供连通性服务，其核心部件是实现分组交换的路由器（用来转发分组）</p>
-<p>两个概念：电路交换与分组交换</p>
-<p>电路交换：建立连接——通话——释放连接（两个用户在连接期间始终占用端到端的通信资源）（连接指专用的物理通道）</p>
-<p>分组交换：存储转发，将报文（要发送的整块数据）划分为几个分组，利用相关控制信息进行分装为数据单元 ，然后进行转发</p>
-<h3 id="计算机网络的类别"><a href="#计算机网络的类别" class="headerlink" title="计算机网络的类别"></a>计算机网络的类别</h3><p>1，按作用范围分</p>
-<pre><code> 广域网   
-
- 城域网
-
- 局域网
-
- 个人区域网
-</code></pre>
-<p>2，按网络的使用者</p>
-<pre><code> 公用网
-
- 专用网
-</code></pre>
-<p>3，用来把端主机接入因特网的网络</p>
-<pre><code> 接入网
-</code></pre>
-<h3 id="计算机网络的性能指标"><a href="#计算机网络的性能指标" class="headerlink" title="计算机网络的性能指标"></a>计算机网络的性能指标</h3><p>  速率：数据率</p>
-<p>  带宽：单位时间内信道能通过的最高数据率</p>
-<p>  吞吐量：单位时间内通过某网络（信道或者接口）的实际数据量</p>
-<p>  时延</p>
-<pre><code>  发送时延：发送端发送一个完整的数据帧所需要的时延
-
-  传播时延：电磁波在信道中传播所需要的时间
-
-  处理时延：主机或路由器处理数据分组时花费的时间
-
-  排队时延：在路由器中等待分组时间
-</code></pre>
-<p>  时延带宽积——以比特为单位的链路长度</p>
-<p>  往返时间RTT</p>
-<p>  利用率：包括信道利用率和网络利用</p>
-<h3 id="其他非性能特征"><a href="#其他非性能特征" class="headerlink" title="其他非性能特征"></a>其他非性能特征</h3><p>计算机网络的体系结构——-分层次的体系结构<br>SNA系统网络体系结构</p>
-<p>OSI标准——由国际标准化组织制定的网络标准，但在实际应用中被TCP/IP协议替代</p>
-<h3 id="TCP-IP协议"><a href="#TCP-IP协议" class="headerlink" title="TCP/IP协议"></a>TCP/IP协议</h3><p>协议与划分层次——</p>
-<p>网络协议：（明确规定交换数据的格式和有关同步问题）为进行网络中的数据交换而采取建立的规则，标准或约定</p>
-<pre><code>三要素：语法   语义   同步
-</code></pre>
-<p>具有五层协议的体系结构（结合OSI的七层协议体系结构和TCP/IP的四层结构）</p>
-<p>  应用层——通过应用进程间的交互来完成特定网络应用</p>
-<p>  运输层——向两个主机进程之间的通信提供通用的数据传输服务具有复用和分用的功能</p>
-<pre><code>             （两种协议——TCP协议UDP协议）
-</code></pre>
-<p>  网络层——分装成数据包——IP数据报使用IP协议</p>
-<p>  数据连接层——分装成帧</p>
-<p>  物理层——考虑的是比特流的传输问题，屏蔽传输媒体的差异性</p>
-<p>相关概念：</p>
-<p>  协议数据单元PDU：OSI参考模型为对等层次之间传送的数据单位的命名</p>
-<p>  实体：任何可以接受或者发送信息的软件进程或者硬件</p>
-<p>  协议：控制两个对等实体进行通信的规则的集合</p>
-<p>  在协议控制下，下层向上层提供服务，所以协议是水平的，服务是垂直的</p>
-<p>TCP/IP协议族示意图</p>
-<h2 id="第二章-物理层"><a href="#第二章-物理层" class="headerlink" title="第二章 物理层"></a>第二章 物理层</h2><h3 id="重要内容-1"><a href="#重要内容-1" class="headerlink" title="重要内容"></a>重要内容</h3><p>  物理层的任务<br>  几种常用的信道复用技术<br>  几种常用的宽带接入技术，主要是ADSL，FTTx</p>
-<h3 id="物理层的基本概念"><a href="#物理层的基本概念" class="headerlink" title="物理层的基本概念"></a>物理层的基本概念</h3><p>物理层的作用是屏蔽掉传输媒体和通信手段（即物理设备）的差异，<br>物理层的主要任务<br>  确定与传输媒体的接口有关的一些特性，<br>    1）机械特性<br>    2）电气特性<br>    3）功能特性<br>    4）过程特性<br>完成数据在计算机内部（并行传输）与通信线路上（串行传输）之间的串并传输方式的转换</p>
-<h3 id="数据通信的基本知识"><a href="#数据通信的基本知识" class="headerlink" title="数据通信的基本知识"></a>数据通信的基本知识</h3><p>1）数据通信系统的模型</p>
-<p> 源系统（源点，发送器）——通信系统（传输线或者网络）——目的系统（接收器，终点）<br>常用术语：<br>  消息：传送的信息<br>  数据：消息的实体，即用特定方式表示的信息<br>  信号：数据的电气或者电磁表现<br>    信号可以分为两类：模拟信号和数字信号<br>  信道：向某一个方向传送信息的媒体，包括<br>    单向信道：一方发送，一方接收<br>    双向交替信道：双方都可发送消息，但不能同时进行<br>    双向同时信道：双方可同时发送信息<br>调制：将来自源信号的低频甚至直流信号进行变换，使得这种低频直流信号可以便于在信道内传输<br>  两种调制方法：<br>    基带调制： 把数字信号转换为另一种形式的数字信号，即仅对信号的波形进行变换，可称之为编码调制</p>
-<pre><code>带通调制：使用载波进行调制，将基带信号的频率般到高频段，并将之转换为模拟信号
-</code></pre>
-<p>传输媒体：<br>  引导性传输媒体：</p>
-<p>  双绞线，同轴电缆，光缆，</p>
-<p>非引导型传输媒体：<br>  即无线传输</p>
-<p>信道复用技术<br>复用，即信道共享，几种常见的信道复用技术：频分复用，时分复用，统计时分复用</p>
-<p>通过复用器和分用器进行信号的复用和分用</p>
-<p>频分复用FDM</p>
-<p>用户在同样的时间内占用不同的频率带宽而复用同一个信道   </p>
-<p>时分复用TDM</p>
-<p>将时间划分为相同的时分复用帧TDM，在不同的时间占用相同的频带宽度，</p>
-<p>统计时分复用STDM </p>
-<p>改进的时分复用，按需动态分配时隙，而不是固定分配时隙 （时隙数小于连接在集中器上的用户数，使得每次传送的STDM帧中的分组都是满的</p>
-<p>波分复用WDM</p>
-<p>光的频分复用，利用在光线技术通信中；</p>
-<p>码分复用CDM</p>
-<p>每个用户在相同的时间使用相同的频带进行通信，但各用户使用经过挑选的不同码型，从而使得个用户之间可以进行独立的通信</p>
-<p>数字传输系统<br>宽带接入技术<br>有线宽带接入——ADSL技术和FTTX技术</p>
-<p>非对称数字用户线ASDL技术是用数字技术对现有的模拟电话用户线进行改造，使其能够承载宽带业务的一种技术；</p>
-<p>光纤同轴混合网HFC在有线电视网的基础上开发的</p>
-<p>光纤到户技术FTTH</p>
-<h2 id="第三章-数据链路层"><a href="#第三章-数据链路层" class="headerlink" title="第三章 数据链路层"></a>第三章 数据链路层</h2><h3 id="重要内容-2"><a href="#重要内容-2" class="headerlink" title="重要内容"></a>重要内容</h3><p>  数据链路层点对点信道和广播信道的特点以及这两种信道使用的协议的特点</p>
-<p>  数据链路层的三个基本问题:封装成帧，透明传输，差错检测</p>
-<p>  以太网MAC层的硬件地址</p>
-<p>  适配器，转发器，集线器，网桥，以太网交换机的作用以及使用场合</p>
-<p>数据链路层使用的信道主要有以下两种：</p>
-<p>  点对点信道：使用一对一的点对点通信方式</p>
-<p>  广播信道：使用一对多的广播通信方式</p>
-<p>使用点对点信道的数据链路层<br>链路：从一个节点到相邻节点的一段物理线路</p>
-<p>数据链路：通信协议加上物理通道（使用网络适配器实现这些网络协议）</p>
-<p>点对点信道的数据链路层的协议数据单元——帧</p>
-<p>网络层协议数据单元——IP数据报（数据报，分组或包）</p>
-<p>数据链路层的作用就是将网络层的数据包封装成帧（交给物理层）发送到链路上；或者把（从物理层中）接收到的帧中的IP数据报取出并交给网络层；</p>
-<p>数据链路协议的三个基本共同问题：封装成帧，透明传输，差错检测</p>
-<p>封装成帧<br>将IP数据报的前后分别添加首部和尾部构成帧，以便于接收端能够在物理层的比特流中知道帧的开始和结束，即进行帧定界；</p>
-<p>此外，首部和尾部还要添加许多控制信息，链路层协议规定了所能传送的帧的数据部分长度上限，最大传送单元——MTU</p>
-<p>（当传送的数部份是可打印的ASCII码组成的文本文件时，我们可以使用不可打印符来作为帧定界符）</p>
-<p>透明传输<br>透明传输的概念是指在数据链路层传输时，所传输的数据在数据链路层没有任何的阻挡，接收方所收到的数据和发送方发送的数据没有任何差别，也就是说，数据链路层对其传输的数据帧是完全透明的；</p>
-<p>字节填充：在传输的过程中，为防止数据部分出现帧定界符，使得接收方误以为收到的数据提前结束，所以采用转义字符的方法，将在数据部分出现的控制字符前插入转义字符，，在接收方的数据链路层将插入的转义字符删除；</p>
-<p>差错检测<br>差错检测指的是在传输过程中产生的比特差错；</p>
-<p>误码率：一段时间内，传输错误的比特占传输总数的比率；</p>
-<p>目前在数据链路层采用的差错检验方式是循环冗余检验；</p>
-<p>在数据链路层我们保证的是无比特差错，而并无传输差错，传输差错还包含帧丢失，帧重复，帧失序等；</p>
-<h3 id="点对点协议PPP"><a href="#点对点协议PPP" class="headerlink" title="点对点协议PPP"></a>点对点协议PPP</h3><p>ppp协议是端计算机和ISP惊进行通信时所使用的数据链路层协议</p>
-<p>PPP协议的特点</p>
-<p>IETF认为PPP协议应满足的需求：<br>1）简单</p>
-<p>2）封装成帧</p>
-<p>3）透明性</p>
-<p>4）支持多种网络协议</p>
-<p>5）支持多种类型数据链路</p>
-<p>6）具有差错检测功能</p>
-<p>7）能够检测连接状态</p>
-<p>8）定义最大传输单元</p>
-<p>9）网络层地址协商</p>
-<p>10）数据压缩协商</p>
-<p>PPP协议的组成</p>
-<p>1）一个将IP数据报封装到串行链路的方法</p>
-<p>2，一个用来建立，配置和测试数据连路连接的链路控制协议LCP</p>
-<p>3）一套网络控制协议NCP（每个协议用来支持不同的网络层协议）</p>
-<p>PPP协议的帧格式</p>
-<h3 id="各字段的意义"><a href="#各字段的意义" class="headerlink" title="各字段的意义"></a>各字段的意义</h3><p>F为标志字段，表示一个帧的开始或者结束</p>
-<p>A为地址字段，规定为0xFF</p>
-<p>C为控制字段，规定为0x03</p>
-<p>协议字段区分信息部分的内容（为0x0021时表示信息字段时IP数据报，为0xC021时，表示信息字段为PPP链路控制协议LCP的数据，为0x8021 时表示这是网络层的控制数据）</p>
-<p>信息字段的长度可变，不超过1500字节</p>
-<p>FCS字段表示的是帧检验序列</p>
-<p>字节填充<br>当信息字段中出现和标志字段相同的比特组合时，则进行字节填充的办法使得数据部分能够完整的传送到接收端</p>
-<p>零比特填充</p>
-<p>PPP协议的工作状态<br>用户拨号接入ISP——→端机向ISP发送一系列链路控制协议LCP分组，→进行网络层配置→网络层协议NCP向端机分配IP地址</p>
-<p>使用广播通信的数据链路层<br>局域网主要使用的就是广播信道</p>
-<p>局域网的数据链路层</p>
-<p>局域网的特点：网络为一个单位所拥有，地理范围和站点数目有限</p>
-<p>局域网的优点：</p>
-<p>1）具有广播功能</p>
-<p>2）便于系统的扩展和演变</p>
-<p>3）提高了系统的可靠性，可用性。生存性</p>
-<p>局域网的分类：星型网，环形网，总线网（最为著名的以太网就是总线网）</p>
-<p>共享信道的两种技术方法：</p>
-<p>1)静态划分信道</p>
-<p>2)动态媒体解入控制（随机接入，受控接入）</p>
-<p>由于商业竞争关系而未能形成统一的局域网标准，所以鉴于此将局域网的数据链路层划分为了两个子层——逻辑链路控制层LLC和媒体接入控制层MAC层，MAC层用来解决媒体输入相关的问题</p>
-<h3 id="适配器的作用"><a href="#适配器的作用" class="headerlink" title="适配器的作用"></a>适配器的作用</h3><p>１）适配器用来连接计算机与局域网；同时要能够实现以太网协议；</p>
-<p>２）适配器和局域网之间的通信是通过双绞线或者电缆以串行传输的方式进行的；而适配器与计算机之间的通信是并行方式进行的，之所以适配器要能够进行两种数据传送方式之间的串并行转化；</p>
-<p>３）网络上的数据率与计算机总线上的数据率不同，因此适配器要安装内存储器以进行两种速率下的缓存功能</p>
-<p>４）适配器要能够实现以太网协议</p>
-<p>５）计算机的硬件地址就在适配器的ROM中；（计算机的软件地址IP地址，在计算机的存储器中）</p>
-<h3 id="CSMA-CD协议"><a href="#CSMA-CD协议" class="headerlink" title="CSMA/CD协议"></a>CSMA/CD协议</h3><p>​    基于以太网的广播通信方式采用的具有检测功能的协议</p>
-<p>要点：<br>  多点接入</p>
-<p>  载波监听</p>
-<p>  碰撞检测</p>
-<p>多点接入——即总线网络的方式</p>
-<p>载波监听——每个站在发送前和发送的时候都不断的检测信道是否有其他站点在发送信号</p>
-<p>碰撞检测——边发送边监听，若在信道上有至少两个站点同时发送信息便发生碰撞，使得两边发送的信息都作废；</p>
-<p>  碰撞检测的相关知识——</p>
-<p>电磁波在1km的电缆传送的传播时延约为5μs</p>
-<p>所以一个站点最长在发送信息之后的一个往返时间（即两倍的端到端的传播时延）内才能收到碰撞信号，所以一个站点在发送信号的一段时间内，是不确定是否会遭遇碰撞的；——即以太网发送的不确定性；而这段不确定是否会发生碰撞的时间称为争用期（或碰撞窗口）；</p>
-<p>而在争用期如果发生碰撞则双方都需要进行重传操作，而以太网使用的确定重传时间的方法称为截断二进制指数退避算法；</p>
-<p>这是一种动态退避算法，在争用期（具体为51.2μs）内可传送512bit，即64字节，所以发生碰撞的时间就在站点发送512bit的时间内（也就是说，如果站点在发送一个完整的512字节的过程中没有检测到碰撞信号，则说明以后的发送都不会发生碰撞，可以完整的发送完整个数据帧）</p>
-<p>具体的算法原理在这就不详细说明了，在动态退避的过程中，为了使所有的站点发送的每一个数据帧逗都能保证得到想要的发送结果信息（是否发生碰撞），则规定一个数据帧的最小长度应该为512bit，这样，每个站点在发送所有的数据帧时都能够在发送完之前知道是否发生了碰撞，是否需要重传（如果小于最小帧长64字节，则有可能在完全发送完之后才发生碰撞，这样发送站点就不知道发生了碰撞，即不会重传该帧），因此，在以太网中多点信道中，凡长度小于64 字节的帧都是由于冲突而发生异常终止的无效帧，在接收站点的适配器中即可方便判断出该结果；</p>
-<p>规定帧间最小间隔9.6μs，是为了使刚刚收到数据帧站点能够有时间对手的数据帧作出反应</p>
-<p>强化碰撞</p>
-<p>  ——在发生碰撞之后除了立即停止发送数据之外，还要发送32bit或48bit 的人为干扰信号，目的是为了能够让所有站点都知道发生了碰撞</p>
-<p>使用集线器的星形拓扑结构<br>双绞线以太网的出现，是局域网发展史上的一个重要的里程碑</p>
-<p>集线器的特点：<br>集线器使用电子器件模拟实际电缆线的工作，所以使用集线器的以太网在逻辑上还是一个总线网，各站逻辑上共享总线。而且是用的还是协议；</p>
-<p>集线器的接口通过两对双绞线与计算机上的适配器相连；一个集线器像是一个多接口的转发器；</p>
-<p>集线器工作在物理层，每个接口只简单地转发比特，不进行碰撞检测，</p>
-<p>集线器采用专门的芯片，进行自适应串音回波抵消；（使得同一接口的强信号不会对弱信号产生干扰）</p>
-<p>MAC层的硬件地址<br>硬件地址又称为物理地址或MAC地址</p>
-<p>硬件地址其实不算严格意义上的地址，因为并没有指明具体位置，硬件地址是适配器唯一编号，用来唯一的标识每台电脑上的适配器</p>
-<p>硬件地址在适配器生产时固化在适配器的ROM中；</p>
-<p>MAC地址的格式</p>
-<p>总共64位（6字节）前三字节由管理全球硬件地址的机构——注册管理机构RA向适配器制造公司出售称为组织唯一标识符OUI，后三字节由制造公司自行分配，称为扩展标识符，（其中前三字节中有两位是用来标识是否位单播地址和是否属于全球管理的）</p>
-<p>MAC帧的格式</p>
-<p>目的地址和源地址指的是硬件地址</p>
-<p>类型字段用来标志上层使用的是什么协议</p>
-<p>FCS帧检验序列，使用CRC检验</p>
-<p>前同步码是为了使适配器的时钟与比特流达成同步；</p>
-<p>同时我们要注意的是在MAC帧中并没有数据长度的标识，但由于传输时使用的是曼彻斯特编码的方式，所以通过对曼彻斯特编码的信号特点的观察便可确定是否传送完毕；（曼彻斯特编码信号的码元正中间有一次电压转换）</p>
-<p>以太网的扩展<br>在物理层扩展以太网</p>
-<p>在数据链路层扩展以太网</p>
-<p>通过网桥扩展以太网</p>
-<p>通过以太网交换机扩展</p>
-<p>虚拟局域网</p>
-<h2 id="第四章-网络层"><a href="#第四章-网络层" class="headerlink" title="第四章 网络层"></a>第四章 网络层</h2><h3 id="重要内容-3"><a href="#重要内容-3" class="headerlink" title="重要内容"></a>重要内容</h3><p>虚拟互联网的概念</p>
-<p>IP地址与物理地址的关系</p>
-<p>传统的分类的IP地址（包括子网掩码）和无分类域间路由选择CIDR</p>
-<p>路由选择协议的工作方式</p>
-<p>网络层提供的两种服务<br>　面向连接和无连接的传送服务</p>
-<p>在互联网中，网络层向上只提供简单灵活的，无连接的，尽最大努力交付的数据报服务</p>
-<p>即网络层不提供服务质量的承诺</p>
-<p>网际协议IP<br>三个协议</p>
-<p>地址解析协议ARP</p>
-<p>网际报文管理协议ICMP</p>
-<p>网际组织管理协议IGMP</p>
-<p>这三种协议与IP协议的关系___________</p>
-<h3 id="虚拟互联网络的概念"><a href="#虚拟互联网络的概念" class="headerlink" title="虚拟互联网络的概念"></a>虚拟互联网络的概念</h3><p>___即逻辑互联网络,忽略物理层的客观异构性,在网络层看起来好像是一个统一的网络,即互联网可以有多种异构的网络组成</p>
-<p>网络互联的一些中间设备_</p>
-<p>物理层:转发器</p>
-<p>数据链路层:网桥</p>
-<p>网络层:路由器</p>
-<p>网络层以上:网关</p>
-<h3 id="分类的IP地址"><a href="#分类的IP地址" class="headerlink" title="分类的IP地址"></a>分类的IP地址</h3><p>IP地址的概念:<br>用来唯一标识全球连接在互联网上的主机的接口的标识符</p>
-<p>IP地址的划分方式历史:<br>分类的IP地址</p>
-<p>划分子网</p>
-<p>构成超网</p>
-<p>分类的IP地址</p>
-<p>IP地址前几位为类位别，标明该IP地址属于哪类</p>
-<p>IP地址的点分十进制表示法——把IP地址的每八位用十进制表示，便于记忆书写</p>
-<p>常用的三类IP地址：<br>本网络：A类地址中网络号全为0的IP地址</p>
-<p>环回测试：A类地址中网络号为01111111的IP地址用作本地软件环回测试本主机的进程之间的通道</p>
-<p>路由器仅根据目的主机IP地址中的网络号来转发分组</p>
-<p>实际IP地址是主机与网络链路之间的一条链路的标识（一个主机连接在两个不同的网络上时，该主机对应的就有两个IP地址）</p>
-<p>一个网络是指具有相同网络号的主机的集合，因此用网桥或转发器连接起来的若干局域网属于同一个网络</p>
-<p>互联网上的网络号都是平等的，与其范围大小没有关系</p>
-<p>无名网络：两个路由器直接相连时并不分配IP地址，这两个路由器之间的网络称为无名网络，或无编号网络</p>
-<h3 id="IP地址与硬件地址"><a href="#IP地址与硬件地址" class="headerlink" title="IP地址与硬件地址"></a>IP地址与硬件地址</h3><p>硬件地址时物理层和数据链路层使用的地址</p>
-<p>IP地址是IP数据报在网络层及以上各层使用的一种逻辑地址</p>
-<p>MAC帧中的源地址和目的地址都是硬件地址，整个IP数据报在物理层被封装在数据部分，IP地址对数据链路层不可见</p>
-<p>数据报在路由其之间传送时，途径的路由器地址不出现在IP数据报中，当前路由器根据目的IP地址自主路由出下一路由器地址</p>
-<p>分组每次经过路由器转发时都要将MAC的首部和尾部丢弃重新封装——变换MAC帧中的目的地址和源地址</p>
-<p>地址解析协议ARP<br>ARP协议:根据已知的IP地址解析出该主机的硬件地址;</p>
-<p>RARP协议:根据硬件地址解析出该主机对应的IP地址</p>
-<p>主机ARP高速缓存:用来存放从IP地址映射硬件地址的映射表,并且动态更新(方法:新增或超时删除)这个映射表;</p>
-<p>新增的方法:</p>
-<p>通过向本局域网内所有的主机发送ARP请求分组,在得到响应分组后便将这个目的主机的硬件地址写入ARP高速缓存中</p>
-<p>同时,ARP高速缓存中对每个硬件地址都设置了生存时间,超过生存时间的硬件地址便进行删除操作,便于进行动态更新,防止出现发送到错误(过时的)硬件地址处;</p>
-<p>注意：地址解析协议ARP只能用来解决同一个局域网（包括该网络和与该网络相连的路由器）内的地址映射，网络之间的路由并能不能做到；</p>
-<p>从硬件地址到IP地址的解析每次转发分组时都要重复进行，但这种开销是不可避免的，是为方便的在各种异构网络之间进行转发工作而屏蔽网络硬件之间的异构性，从而体现出虚拟网络的含义；</p>
-<p>IP数据报的格式</p>
-<p>其中，</p>
-<p>首部检验和</p>
-<p>首部检验和的作用：用于检验数据报在传送的过程中其首部是否出错；</p>
-<p>检验方法：在发送方将IP数据报的首部划分为许多16位的字序列；并把检验和字段置零，用反码运算术将字相加之后，将得到的和的反码写入检验和位置；在接受方接收到数据报之后，使用相同的方法将首部所有的字（包括检验和）相加一次，若没有出错则，得到的结果必然为零，最后的结果便可作为是否出错的判断标志；</p>
-<p>反码求和：0+0=0；0+1=1；1+1=0，同时产生进位；最高位产生进位时最后的结果加+1；</p>
-<p>划分子网<br>构造超网<br>网际控制报文协议ICMP<br>为更有效的转发IP数据报并提高交付成功的机会</p>
-<p>ICMP数据报装在IP数据报中，作为其数据部分出现</p>
-<p>ICMP数据报有两种：ICMP差错报告报文和ICMP询问报文</p>
-<p>改变路由报文：（重定向）——互联网主机中也存在路由表，但主机中的路由表并不实时更新，（不和路由器定期交换路由信息），所以主机中的路由表更新的方法就是主机通过接收这种来自路由器的改变路由报文来更新其路由表；</p>
-<p>ICMP的应用——PING（分组网间探测）：用来测试两台主机之间的连通性</p>
-<pre><code>                       用在UNIX操作系统中用来跟踪一个分组从源点到终点的路径
-</code></pre>
-<h3 id="互联网的路由选择协议"><a href="#互联网的路由选择协议" class="headerlink" title="互联网的路由选择协议"></a>互联网的路由选择协议</h3><p>1，理想的路由算法</p>
-<p>2，分层次的路由选择协议：减少路由器之间的路由信息量；保密</p>
-<p>3，自治系统AS：在单一技术管理下的一组路由器（一个AS对其他AS表现出的是一个单一的和一致的路由选择策略）</p>
-<p>4，两种路由选择协议——</p>
-<p>  内部网关协议IGP：在自治系统内部使用的路由选择协议，域间路由选择，有多种，如RIP，OSPF</p>
-<p>  外部网关协议EGP：在自治系统之间使用的路由选择协议，域内路由选择，目前使用的是BGP协议</p>
-<p>1，内部网关协议RIP<br>1）工作原理</p>
-<p>是一种分布式的基于距离向量的路由选择协议</p>
-<p>分布式：每个路由器不断地和相邻路由器交换信息；(所交换的式当前路由器知道的所有路由信息)</p>
-<p>距离向量：从当前路由器每经过一个路由器则距离加一；记录到达每个路由器的距离，以找出最小距离；</p>
-<p>2）距离向量算法</p>
-<p>3）RIP协议的报文格式</p>
-<p>RIP2可以支持变长子网掩码和无分类域间路由选择CIDR</p>
-<p>RIP2的报文格式</p>
-<p>（RIP报文通过运输层的用户数据报UDP传送，使用UDP端口520）</p>
-<p>特点：好消息传播的快。坏消息传播的慢</p>
-<h3 id="内部网关协议OSPF"><a href="#内部网关协议OSPF" class="headerlink" title="内部网关协议OSPF"></a>内部网关协议OSPF</h3><p>1，OSPF的基本特点</p>
-<p>开放最短路径优先——为克服RIP协议制定的协议</p>
-<p>使用了Dijkstra的最短路径算法；（最短路径算法详见博文：）</p>
-<p>特征：并不表示其他的路由选择协议不是最短路径优先；（实际上所有在自治系统内的路由选择协议都是要找一条最短路径）</p>
-<p>使用分布式的链路状态协议，</p>
-<p>2，洪范法：</p>
-<p>路由器通过所有的端口向所有的相邻路由器发送信息，而所有的相邻路由器也是同样的做法，（但发送的对象不包括之前向他发送信息的那个路由器），从而最终使得整个局域网都得到该信息的一个副本，</p>
-<p>而发送的信息就是与本路由器相邻的所有路由器的链路状态（链路状态是指相邻路由器及到达该路由器的代价）</p>
-<p>只有链路状态发生变化时，才使用洪范法发送信息，（不是定期交换）</p>
-<p>外部网关协议BGP<br>外部网关协议用来解决不同自治系统之间的路由选择策略；</p>
-<p>边界网关协议不追求寻找最佳路径，而是在可到达的基础上找到一条相对较好的路径；</p>
-<p>BGP发言人：在BGP协议中，一个自治系统中用来与其他自治系统（通过TCP连接）交换路由信息的路由器；</p>
-<p>交换信息的两个BGP发言人彼此成为临站或对等站</p>
-<p>所交换的信息是可达性信息、</p>
-<p>每个发言人除了要运行BGP协议外，还要运行本自治系统内部的协议；</p>
-<p>路由器的构成<br>路由器的结构</p>
-<p>两部分——路由选择部分 和 分组转发部分</p>
-<p>路由选择部分：</p>
-<p>控制部分，核心是路由选择处理机，路由选择处理机的作用是构造路由表，同时定期更新维护路由表路由表；</p>
-<p>分组转发部分：</p>
-<p>由三部分组成——输入输出端口，交换结构</p>
-<p>交换结构的工作是将收到的分组根据路由表从输入端口转发到输出端口；</p>
-<p>三种转发方法：</p>
-<p>1）通过存储器进行交换</p>
-<p>2）通过总线进行交换</p>
-<p>3）通过纵横交换结构（总线网）进行交换</p>
-<p>IPv6<br>从IPv4向IP v6的过渡<br>双栈协议</p>
-<p>隧道技术</p>
-<p>IP多播<br>基本概念：<br>多播即一对多的通信</p>
-<p>多播组的IP地址为D类IP地址；（多播地址只能用来当作目的地址，不能用作源地址）</p>
-<p>1，在局域网上进行硬件多播</p>
-<p>多播组的MAC地址：</p>
-<p>是由MAC地址和D类IP地址的后23位拼接起来的；</p>
-<p>IGMP协议</p>
-<p>网际组管理协议</p>
-<p>是让连接在本地局域网上的多播路由器知道在本局域网上有多少主机接入或退出了多播组</p>
-<p>多播组协议的特点：</p>
-<p>多播转发必须动态地适应多播组成员的变化</p>
-<p>多播路由器在转发多播数据报时，不能进根据数据包中的目的地址来转发数据报，还要知道数据报的来源（多播组内的成员发送信息时，就不用再向该成员转发数据报）</p>
-<p>多播成员或非多播成员均可发送多播数据报</p>
-<h3 id="IGMP协议的功能："><a href="#IGMP协议的功能：" class="headerlink" title="IGMP协议的功能："></a>IGMP协议的功能：</h3><p>2，网际组管理协议IGMP</p>
-<p>3，多播路由选择协议</p>
-<p>虚拟专用网VPN<br>网络地址转换NAT</p>
-<h2 id="第五层-运输层"><a href="#第五层-运输层" class="headerlink" title="第五层 运输层"></a>第五层 运输层</h2><h3 id="重要内容-4"><a href="#重要内容-4" class="headerlink" title="重要内容"></a>重要内容</h3><p>运输层的作用</p>
-<p>端口和套接字的意义</p>
-<p>无连接的UDP的特点</p>
-<p>面向连接的TCP的特点</p>
-<p>在不可靠网络上时先可靠传输的原理</p>
-<p>TCP的滑动窗口，流量控制，拥塞控制和连接管理</p>
-<p>运输层协议概述<br>运输层用来解决进程之间的通信问题，属于面向通信部分的最高层</p>
-<p>运输层向用户屏蔽了下面网络核心的细节；</p>
-<p>为了能够满足同一主机的不同进程间的通信要求，运输层需要一个很重要的功能——分用与复用（分用指发送方不同进程可以使用同一运输协议进行发送数据报。分用指接收方的运输层可以将接收到的数据报正确交付给不同的进程）</p>
-<p>运输层还要对从网络层收到的数据报进行差错检测，（IP数据包中的首部中的检验和字段只是对首部进行检查，并不对数据部分进行检查）</p>
-<p>运输层的两个主要协议：　用户数据报协议UDP——无连接</p>
-<p>　　　　　　　　　　　　传输控制协议TＣＰ——面向连接</p>
-<p>运输层的端口<br>端口是指软件端口,是应用层的各种协议进程与运输实体进行层间交互的一种地址</p>
-<p>(数据报在网络上运输的终点),主机通过端口将数据报分发给不同的进程;</p>
-<p>端口号只具有本地意义,是为了标志本计算机中各个进程在和运输层交互时的层间接口(不同计算机中相同的端口是没有任何关联的)</p>
-<p>TCP/IP协议中,在运输层用16位端口号来标志一个端口,一个主机总共有65535个端口,</p>
-<p>服务器使用的端口号</p>
-<p>客户端使用的端口号</p>
-<p>用户数据报协议UDP<br>UDP概述</p>
-<p>特点:</p>
-<p>无连接,</p>
-<p>尽最大努力交付;</p>
-<p>面向报文</p>
-<p>没有拥塞控制</p>
-<p>支持一对一,多对多,多对一,一对多的交互通信</p>
-<p>首部开销小</p>
-<p>UDP的首部格式</p>
-<p>传输控制协议TCP<br>特点:</p>
-<p>面向连接的运输层协议</p>
-<p>点对点连接</p>
-<p>可靠交付</p>
-<p>提供全双工通信</p>
-<p>面向字节流(UDP面向数据报)</p>
-<p>TCP的面向连接</p>
-<p>每一条TCP连接只有两个端点_套接字</p>
-<p>套接字=(IP地址:端口号)</p>
-<p>(同一个端口号和同一个IP地址均可有多个TCP连接)</p>
-<p>可靠传输的原理<br>TCP在不可靠传输的网络层之上提供可靠传输的服务,必须采取相关的措施</p>
-<p>1.停止等待协议</p>
-<p>分组发送之后必须暂时保留该分组的副本</p>
-<p>每个分组进行编号</p>
-<p>发送确认</p>
-<p>超时重传</p>
-<p>TCP报文段的首部格式</p>
-<p>TCP传送的数据单元是报文段</p>
-<p>检验和字段检验的包括首部和数据部两部分</p>
-<p>窗口指的是发送方的接收窗口，窗口值的意义：从本报文段首部中的确认号算起，接收方目前允许对方发送的数据量；（窗口值是不断动态变化的）（动态确认机制）</p>
-<p>TCP可靠传输的实现<br> 1，以字节为单位的滑动窗口——连续ARQ协议</p>
-<p>发送窗口：发送窗口内的数据的可连续的发送出去，而不需要等待对方的确认（从而提高信道利用率）</p>
-<p>滑动窗口：发送方每收到一个接受确认，就将发送窗口的向前滑动一个字节的位置；</p>
-<p>接收方采用积累确认的方式（对有序的几个分组只确认最后一个分组）</p>
-<p>TCP的滑动窗口是以字节为单位的；</p>
-<p>2，超时重传的时间选择</p>
-<p>3，选择确认SACK</p>
-<p>TCP的流量控制</p>
-<p>TCP的拥塞控制<br>拥塞：在某段时间，若对网络中的资源需求超过了该资源所能提供的可用部分，使得网络的性能变坏；（资源包括——链路容量，交换节点中的缓存，处理机）</p>
-<p>TCP的拥塞控制方法</p>
-<p>慢开始</p>
-<p>拥塞避免</p>
-<p>快重传</p>
-<p>快恢复</p>
-<p>TCP的运输连接管理<br>运输连接管理的目的是为了使运输连接的建立和释放都能够正常的进行</p>
-<h2 id="第六章-应用层"><a href="#第六章-应用层" class="headerlink" title="第六章 应用层"></a>第六章 应用层</h2><p>本章概述<br>数据传输的终点是主机进程，而网络通信的目的是为了给应用提供服务；本章中的各应用层协议主要讲述了各应用的进程是如何在主机中完成通信工作的；</p>
-<p>重要内容</p>
-<h3 id="域名系统DNS"><a href="#域名系统DNS" class="headerlink" title="域名系统DNS"></a>域名系统DNS</h3><p>万维网和HTTP协议，万维网两种不同的搜索引擎</p>
-<p>电子邮件的传送过程</p>
-<p>动态主机配置协议DCHP</p>
-<p>网络管理的三个组成部分</p>
-<p>P2P文件系统</p>
-<p>域名系统DNS<br>概述</p>
-<p>域名系统是为了使对用户来说32位的IP地址更加容易记忆和使用而选择的一种映射方式；</p>
-<p>应用层软件一般直接使用的是域名而非IP地址，在网络层进行数据传输时才将域名转化为路由中使用的IP地址；</p>
-<p>互联网的域名结构是层次结构的，用户通过域名服务器将域名转化为IP地址供网络层使用</p>
-<p>DNS被设计成一个联机分布式的数据库系统，并采用客户服务器方式；</p>
-<p>DNS中大部分域名都在本地进行解析，只有少数域名需要在互联网上进行解析；</p>
-<p>互联网的域名结构</p>
-<p>采用层次树状命名结构；域名由标号组成；</p>
-<p>每一个标号不超过63个字符；标号不区分大小写；完整的域名不超过255个字符；</p>
-<p>域名的等级结构：</p>
-<p>顶级域名：</p>
-<p>1）国家顶级域名</p>
-<p>2）通用顶级域名</p>
-<p>3）基础结构域名</p>
-<p>二级域名由顶级域名组织自行划分</p>
-<p>域名服务器</p>
-<p>域名管理范围采用划分区的方法；一个域名服务器所管辖的范围叫做区；</p>
-<p>一个区中的界点必须连通；每个区设置相应的权限域名服务器；</p>
-<p>域名服务器的层次划分：</p>
-<p>根域名服务器</p>
-<p>顶级域名服务器</p>
-<p>权限域名服务器‘</p>
-<p>本地域名服务器</p>
-<p>主机向本地域名服务器采用递归查询的方法</p>
-<p>本地域名服务器向根域名服务器采用迭代查询的方法；</p>
-<p>同时，为了提高查询效率，减少查询时的网络开销，在每级域名服务器中都采用的高速缓存来存储经常或最近被查询的到的域名对应的IP地址</p>
-<h3 id="文件传送协议FTP"><a href="#文件传送协议FTP" class="headerlink" title="文件传送协议FTP"></a>文件传送协议FTP</h3><p>基于TCP的FTP协议</p>
-<p>主要功能：减少或消除在不同操作系统下处理文件的不兼容性，（包括文件的控制方式，命名方式等）</p>
-<p>特点：属于文件共享协议；联机访问；</p>
-<p>基本原理：</p>
-<p>使用客户服务启方式；服务器中分为两大进程：主进程用来接收请求消息；接收到文件传送消息之后启动若干从属进程处理消息；主进程仍然处于等待状态；</p>
-<p>主进程和从属进程并发进行的；</p>
-<p>在数据传送过程中，启动两个从属进程：控制进程和数据传送进程；其中控制进程用来传送数据传送过程中产生的控制信息；数据传送进程传送数据；同时建立两条连接：控制连接（２１号端口）和数据传送连接（２０号端口）；</p>
-<p>基于UDP的TFTP协议</p>
-<p>简单文件传送协议；使用UDP数据报进行传送；只支持传输不支持交互；</p>
-<p>主要特点：</p>
-<p>１）每次传送的报文大小为５１２字节，（最后一个报文可不足５１２字节），并在最后一个字节中设置结束服标志；</p>
-<p>２）数据报文进行编号；（从１开始）</p>
-<p>３）支持ＡＳＣＩＩ　码或二进制传送</p>
-<p>４）可对文件进行读或写；</p>
-<p>５）使用简单的首部</p>
-<p>６）每次发送完一个UDP之后要进行确认；</p>
-<p>远程终端协议TELNET<br>作用：提供远程终端控制与访问操作；即通过互联网对远程终端进行访问控制；能够适应许多计算机和操作系统的差异;</p>
-<p>将不同计算机操作系统上产生的控制信息转化成统一的格式网络上进行传送,然后转化成本地计算机需的格式;</p>
-<p>万维网WWW<br>万维网是一个大规模的,联机式的信息储藏所;</p>
-<p>使用的统一资源定位符URL来唯一的标识万维网中的各种文档位置;</p>
-<p>万维网是一个分布式的超媒体系统;(是超文本系统的扩展)</p>
-<p>万维网使用连接的方法进行站点之间的访问;</p>
-<p>万维网以客户服务器的方式工作:客户向服务器发出访问请求,然后服务器将万维网文档发送给客户端;客户端即运行在主机中的浏览器;</p>
-<p>在一个客户程序主窗口中显示的万维网文档称为页面;</p>
-<p>万维网使用超文本传送协议HTTP进行文档传输工作;</p>
-<p>万维网使用超文本标记语言HTML描述万维网页面;</p>
-<h3 id="URL的格式"><a href="#URL的格式" class="headerlink" title="URL的格式:"></a>URL的格式:</h3><p>&lt;协议&gt;://&lt;主机(主机的域名)&gt;:&lt;端口&gt;/&lt;路径&gt;</p>
-<p>常用的协议:http协议,ftp协议</p>
-<p>路径:是指文档文件在主机中的位置</p>
-<p>超文本传送协议HTTP</p>
-<p>HTTP是面向事务的应用层协议,规定了浏览器怎样向万维网服务器请求万维网文档;以及服务器怎样将文档传送给浏览器;</p>
-<p>HTTP协议使用面向连接的TCP协议作为运输层协议保证了传输的可靠性;</p>
-<p>代理服务器:又称为万维网高速缓存;将最近的一些请求及其响应存储在代理服务器的本地磁盘中,避免了近期有相同请求时再次访问网络;</p>
-<p>将很大一部分同信活动局限在局域网内部;</p>
-<p>HTTP的保报文结构:</p>
-<p>两类报文:请求报文和响应报文</p>
-<p>在服务器上存放用户的信息______使用cookie</p>
-<p>万维网的文档<br>超文本标语言HTML</p>
-<p>动态万维网文档</p>
-<p>活动万维网文档</p>
-<p>当浏览器请求万维网文档时,服务器将返回给浏览器一段活动文档的程序副本,使程序副本在客户端运行,</p>
-<p>万维网的信息检索<br>全文检索</p>
-<p>分类目录检索</p>
-<p>动态主机配置协议<br>即插即用联网</p>
-<p>应用进程跨网络的通信<br>系统调用</p>
-<p>应用程序编程接口</p>
-<p>P2P应用<br>没有服务器,主机之间通过对等方式进行交互通信</p>
-<h2 id="第七章-网络安全"><a href="#第七章-网络安全" class="headerlink" title="第七章 网络安全"></a>第七章 网络安全</h2><p>重要内容<br>计算机网络面临的安全威胁和一些主要问题</p>
-<p>对称密匙密码体制和公匙密码体制</p>
-<p>数字签名与鉴别</p>
-<p>网络安全协议IPsec协议族和运输安全协议SSl/TSL的要点</p>
-<p>系统安全:防火墙和入侵检测</p>
-<p>网络攻击<br>两种:被动攻击和主动攻击</p>
-<p>被动 攻击:从网络上窃听信息,作为第三者不破坏网络原本的通信</p>
-<p>主动攻击:</p>
-<p>几种常见的方式:</p>
-<p>篡改:篡改,中断或伪造报文</p>
-<p>恶意程序:</p>
-<p>计算机病毒</p>
-<p>计算机蠕虫</p>
-<p>木马</p>
-<p>逻辑炸弹</p>
-<p>后门入侵</p>
-<p>流氓软件</p>
-<p>拒绝服务:向服务器不断发送消息使得服务器一直处于繁忙状态;</p>
-<p>密码体制<br>对称密匙密码体制:加密密匙与解密密匙使用相同的密码体制;</p>
-<p>公匙密码体制:使用不同的加密密匙与解密密匙;</p>
-<p>数字签名<br>数字签名的功能:</p>
-<p>报文鉴别</p>
-<p>报文的完整性</p>
-<p>不可否认(确认报文的发送方)</p>
-<p>鉴别<br>鉴别是验证通信对象是否正确，并且检验所传送的报文的完整性；、</p>
-<p>报文鉴别：</p>
-<p>密匙分配<br>互联网使用的安全协议<br>系统安全:防火墙与入侵检测<br>防火墙:一种访问控制技术,禁止不必要的同通信;</p>
-<p>入侵检测系统:IDS</p>
-<h2 id="第八章-互联网上的音视频服务"><a href="#第八章-互联网上的音视频服务" class="headerlink" title="第八章 互联网上的音视频服务"></a>第八章 互联网上的音视频服务</h2><p>重要内容<br>  多媒体信息的特点</p>
-<p>  流媒体的概念</p>
-<p>  IP电话使用的几种协议</p>
-<p>  改经”经最大努力交付“的几种办法</p>
-<p>  互联网IP层提供 最大交付 和 分组独立交付</p>
-<p>  TCP协议解决IP层不能可靠交付的问题</p>
-<p>多媒体信息在互联网上的传输</p>
-<p>多媒体数据的传输对时延和抖动有较大的要求——边传输边播放</p>
-<p>音视频传输的特点：</p>
-<p>  容忍丢失</p>
-<p>互联网提供的三类音频视频服务——</p>
-<p>  流式存储音视频——边下载便播放</p>
-<p>  流式实况音视频——边录制边发送（多播）</p>
-<p>  交互式音视频——实时交互式通信</p>
-<p>流式存储音视频——</p>
-<p>媒体播放器的主要功能：管理用户界面，解压缩，消除时延抖动，处理传输带来的差错</p>
-<p>具有元文件的万维网服务器</p>
-<p>元文件是用来描述或指明其他文件的一些重要信息的非常小的文件，</p>
-<p>媒体服务器</p>
-<p>媒体播放器向媒体服务器（而不是万维网服务器）请求音视频文件，对流媒体的传输采用TCP协议而不是UDP</p>
-<p>实时流协议RTSP</p>
-<p>流式实况音视频——</p>
-<p>交互式音视频</p>
-<p>IP电话——实况交互式音频  </p>
-<p>IP电话网关——公用电话网和IP网络的接口设</p>
-<p>作用：在呼叫阶段进行电话信令转换</p>
-<pre><code>      在通话期间进行话音编码的转换
-</code></pre>
-<p>IP电话所要使用的几种应用的协议——</p>
-<p>  实时运输协议RTP：为实时应用提供端到端的运输，但不保证任何运输质量</p>
-<p>  实施运输控制协议RTCP：服务质量的监控与反馈，媒体间的同步以及多播组成员间的标志</p>
-<p>  H.323：（信令标准）在互联网的端系统之间进行实时声音和视频会议的标</p>
-<p>  会话发起协议SIP</p>
-<p>改进最大努力交付的几种方法：</p>
-<p>  为使多媒体信息能够在互联网上得到更好的运输体条件，改变方法就是改变之前平等对待所有运输分组</p>
-<p>的协议，使得多媒体数据分组在互联网上运输时能够得到相应的优先级（获得更好的服务质量）</p>
-<p>服务质量：服务性能的总效果，此效果决定用户对服务的满意程度（可用性，差错率，响应时间，吞吐量</p>
-<p>，分组丢失率，连接建立时间等性能指标）</p>
-<p>几种方法——使互联网提供服务质量：</p>
-<p>  即分组的分类，标记，管制，调度，呼叫接纳</p>
-<p>1）调度机制</p>
-<p>  调度即排队的规则，按优先级排队；借助分类程序对于分组按照权重分类，形成不同权重的队列进行传输</p>
-<p>2）管制机制</p>
-<p>  1，控制数据流的平均速率<br>  2，限制峰值速率<br>  3，限制突发分组数<br>                     ————漏桶管制器<br>3）漏桶机制与加权公平排队相结合</p>
-<p>综合服务IntServ和资源预留协议RSVP——最初试图将互联网提供的服务划分为不同的类别<br>IntServ可对单个的应用会话提供服务质量的保证——<br>  资源预留</p>
-<p>  呼叫接纳</p>
-<p>IntServ定义两类服务：</p>
-<p>  有保证的服务</p>
-<p>  受控负载的服务</p>
-<p>IntServ的四个组成部分</p>
-<p>  资源预留协议</p>
-<p>  接纳控</p>
-<p>  分类</p>
-<p>  调度器</p>
+        <h1 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h1><h2 id="1-对网络的基础认识"><a href="#1-对网络的基础认识" class="headerlink" title="1.对网络的基础认识"></a>1.对网络的基础认识</h2><h3 id="lt-1-gt-组网方式"><a href="#lt-1-gt-组网方式" class="headerlink" title="&lt;1&gt;.组网方式"></a>&lt;1&gt;.组网方式</h3><p>1.网络互联:使用集线器将少量主机连在一起<img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710152912947.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<ol>
+<li><p>局域网(LAN):使用交换机和路由器将主机连接，可以自由组合三种方式</p>
+<p>组网方式：</p>
+<p>&lt;1&gt;.交换机</p>
+<p>&lt;2&gt;.路由器</p>
+<p>&lt;3&gt;.交换机+路由器<img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710152936441.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+</li>
+</ol>
+<p>3.广域网(WAN):广域网和局域网知识相对的概念</p>
+<p>例如：一个学校之间的网络就可以成为局域网，而一个国家，多个国家之间可以称为广域网，覆盖的区域不同<img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710152958455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h3 id="lt-2-gt-OSI七层模型"><a href="#lt-2-gt-OSI七层模型" class="headerlink" title="&lt;2&gt;.OSI七层模型"></a>&lt;2&gt;.OSI七层模型</h3><p>1.对协议的简单理解：本质上是数据格式的定义。而知名的数据格式，大家普遍遵循的规定，就属于协议</p>
+<p>2.OSI七层模型：一种网络分层的设计方法论，比较复杂且不实用，落地几乎都是TCP/IP四层，五层模型<img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2021071015494963.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h3 id="lt-3-gt-TCP-IP五层（四层模型）"><a href="#lt-3-gt-TCP-IP五层（四层模型）" class="headerlink" title="&lt;3&gt;.TCP/IP五层（四层模型）"></a>&lt;3&gt;.TCP/IP五层（四层模型）</h3><p>五层模型：除去OSI的表示层和会话层</p>
+<p>四层模型：除去OSI的表示层，会话层和物理层<img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153109182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><strong>注意：</strong></p>
+<p>应用程序实现对应用层的封装分用</p>
+<p>对于一台主机, 它的操作系统内核实现了从传输层到物理层的内容;（四.层封装分用）对于一台路由器, 它实现了从网络层到物理层;（下三层封装分用）<br>对于一台交换机, 它实现了从数据链路层到物理层;（下两层分装分用）<br>对于集线器, 它只实现了物理层;</p>
+<h3 id="lt-4-gt-对封装分用的理解"><a href="#lt-4-gt-对封装分用的理解" class="headerlink" title="&lt;4&gt;.对封装分用的理解"></a>&lt;4&gt;.对封装分用的理解</h3><p><strong>1.封装：发送数据时，从高到低的顺序，按照对应的网络分层协议对数据进行包装</strong><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153123772.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h2 id="2-网络数据传输"><a href="#2-网络数据传输" class="headerlink" title="2.网络数据传输"></a>2.网络数据传输</h2><h3 id="lt-1-gt-局域网"><a href="#lt-1-gt-局域网" class="headerlink" title="&lt;1&gt;局域网"></a>&lt;1&gt;局域网</h3><h4 id="1-认识IP和MAC"><a href="#1-认识IP和MAC" class="headerlink" title="(1)认识IP和MAC"></a>(1)认识IP和MAC</h4><p><strong>IP:</strong></p>
+<p>IP的格式：xxx.xxx.xxx.xxx<br>IP由四个部分组成，每个部分都是0-255.<br>网络号：前三个部分组成（用来标识网段），前三个部分相同，标识在一个网段<br>主机号：最后一个部分用来标识主机号<br>IP分为A-E五大类，部分范围是局域网IP，部分是广域网IP，可以根据规范，知道某个IP是局域网IP还是公网IP<br>注意： 局域网内（局域网IP）：网段唯一，同一个网段，主机号唯一<br>公网(公网IP）：公网IP是唯一的</p>
+<p><strong>MAC:</strong></p>
+<p>和网卡硬件绑定的，全球唯一<br>作用：网络数据传输定位网卡硬件的位置，一个主机可能有多个网卡（例如蓝牙连接，无线连接，有线连接的网卡），电脑硬件定位数据发送的目的位置只能使用MAC</p>
+<p><strong>总结：</strong><br>IP地址描述的是路途总体的起点和终点。（给人用的，网络主机的逻辑地址）<br>MAC地址描述的是路途上的每一个区间的起点和终点（给电脑硬件用的，网络主机的物理地址）</p>
+<h4 id="2-网络数据传输的特性"><a href="#2-网络数据传输的特性" class="headerlink" title="(2)网络数据传输的特性"></a>(2)网络数据传输的特性</h4><p>1.IP，MAC起的作用<br>2.封装分用——发送数据从高到低封装，接收数据从低到高分用<br>3.结合IP，MAC，理解网络数据传输，本质上是一跳一跳的传输数据<img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153249563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>首先根据目的主机发送http请求，从源IP发送数据到目的IP<br>从源MAC（1）发送数据到目的MAC（2），然后MAC（2）对数据进行封装和分用，再以MAC（2）为源MAC，目的MAC为MAC（3），以此，发送数据到最终目的MAC。<br>注意： 接收数据报的主机：可能在一些情况下（广播或者转发），出现目的MAC不是我，我也能收到的情况（后面会提到）。</p>
+<p><strong>五元组：</strong><br>源IP，目的IP，源端口，目的端口，协议号</p>
+<p>IP：标识主机，给人用<br>源IP：发送数据的主机<br>目的IP：接收数据的主机</p>
+<p>端口号：<br>源端口：标识发送数据的进程<br>目的端口，标识接收数据的进程<br>协议号：进程需要封装，解析数据报的数据格式</p>
+<p><strong>DNS协议：</strong><br>作用：域名转IP<img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153306203.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>主机/路由器：都存在DNS缓存<br>域名查询的方式：上图树形结构从下往上查找（缓存，域名服务器）。<br>先在主机/路由器的DNS缓存中找，如果找不到，依次向上</p>
+<p>特殊的IP，域名：本机IP为127.0.0.1，本机域名为localhost</p>
+<h4 id="3-网络数据传输流程"><a href="#3-网络数据传输流程" class="headerlink" title="(3)网络数据传输流程"></a>(3)网络数据传输流程</h4><p><strong>ARP/RARP协议：</strong><br>主机中有ARP缓存表<br>ARP协议：IP转MAC<br>RARP协议：MAC转IP</p>
+<p>注意：交换机和集线器自己是没有MAC地址的，都是通过转发(不会修改源MAC和目的MAC）<br>交换机有MAC地址转换表，可以根据MAC找到对应的端口，而集线器没有这个功能</p>
+<h5 id="1-网络互联的方式"><a href="#1-网络互联的方式" class="headerlink" title="1)网络互联的方式"></a>1)网络互联的方式</h5><p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153324631.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>首先介绍集线器：如上图，网络数据传输时，直接转发到其他所有端口（工作在物理层）</p>
+<p>网络数据传输的过程：</p>
+<p><strong>1.ARP缓存表找到了</strong><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153334819.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>1.主机1发送数据到主机3，http：//主机3：80<br>2.主机1查找本机的ARP缓存表，发现找不到<br>3.主机1发送广播数据报（非真实数据，只是要求对应主机返回MAC：我要IP为主机3的MAC，谁是主机3，快告诉我）</p>
+<p><strong>注意：</strong></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153358407.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>4.集线器转发到主机2，主机3<br>5.主机2接收：要求的IP不是我，丢弃<br>主机3接收：要求的IP是我，返回我的MAC<br>6.主机1收到主机3的返回数据（IP，MAC）更新自己的ARP缓存表<br>7.主机1发送真实的数据到主机3</p>
+<p><strong>注意：使用集线器的缺陷</strong><br>网络冲突，这样构成的网络区域叫冲突域/碰撞域（例如，房间里有多个人说话，那么其中某一个人说话就听不清楚了）</p>
+<h5 id="2-局域网交换机组网的方式"><a href="#2-局域网交换机组网的方式" class="headerlink" title="2).局域网交换机组网的方式"></a>2).局域网交换机组网的方式</h5><p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153409391.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>首先介绍交换机，交换机的作用：<br>MAC地址转换表：保存连接的主机MAC和端口的映射，目的MAC是谁，直接转发到对应的端口（不像集线器，发送到所有端口），不会产生冲突域。</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153416984.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>1.主机1发送数据到主机3 ，http：//主机3：80<br>2.主机1查找本机的ARP缓存表，如果找到，主机1发送数据到主机3。如果找不到，发送广播数据报，让IP为主机3的告诉我，你的MAC<br>3.交换机转发到其他所有端口（广播）<br>4.主机2丢弃，主机3返回自己的MAC<br>5.交换机知道主机3的MAC，主机1知道主机3的MAC（更新ARP缓存表）<br>注意：上述五个步骤，都是根据IP找MAC，和集线器的流程相似，下面的步骤时根据MAC找端口<br>6.主机1发送真实数据给交换机<br>7.交换机查找自己的MAC地址转换表，通过MAC找端口，发送数据到对应的端口<br>8.主机3接收，目的MAC是我，目的IP也是我<br>这种网络数据传输的方式就像：先问张三的手机号，再打电话给张三，对别人没有影响</p>
+<h5 id="3-局域网交换机-路由器组网的方式"><a href="#3-局域网交换机-路由器组网的方式" class="headerlink" title="3)局域网交换机+路由器组网的方式"></a>3)局域网交换机+路由器组网的方式</h5><p><strong>注意：单独由路由器组网的方式，和上述由交换机单独组网的方式相同</strong><br>首先介绍路由器，这里介绍两种：<br>&lt;1&gt;LAN口连接局域网，为主机分配局域网IP，分配的局域网IP都是一个网段（路由器下连接多个主机的类型）<br>路由器还有个网卡：绑定局域网的IP，和下面连接的主机进行信息交互用的</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153433400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>&lt;2&gt;LAN口是网卡。每个LAN口都可以连接类似交换机组网的方式</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153444957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>主机上的网络信息：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2021071015345511.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>第二种路由器组网方式：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153506391.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>1.主机1发送数据到主机2:<a target="_blank" rel="noopener" href="http://192.168.2.y:8080/xxx">http://192.168.2.y:8080/xxx</a><br>2.通过目的IP+子网掩码，计算出目的主机和本机是否在一个网段<br>3.如果是，不需要使用路由器，和上述使用交换机组网方式一样<br>4.如果不是，表示我主机1和交换机处理不了，要发送给网关转发（网关就类似于IP的管理者，能查询其他主机的IP）<br>5.数据报发送给网关设备<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153517113.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>目的MC：通过路由器网关的IP在主机1的ARP缓存表中，获取网关的MAC<br>6.路由器接收到数据报，分用：物理层到网络层，网络层分用，所有可以获取到目的IP<br>7.路由器查找自己的ARP缓存表（IP找MAC）<br>8.找不到，路由器发广播，主机2在哪，告诉我你的MAC<br>9.有了MAC，直接发到主机3</p>
+<h3 id="lt-2-gt-广域网传输流程"><a href="#lt-2-gt-广域网传输流程" class="headerlink" title="&lt;2&gt;广域网传输流程"></a>&lt;2&gt;广域网传输流程</h3><p>1.NAT和NAPT</p>
+<p>NAT协议：局域网IP映射公网IP<br>NAPT协议：局域网IP+局域网端口映射—–&gt;公网IP+公网端口</p>
+<p>2.传输流程</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153534640.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><strong>结合上图，理解广域网传输流程</strong><br>首先：主机1发送<a target="_blank" rel="noopener" href="http://www.baidu.com网络流程/">http://www.baidu.com网络流程</a></p>
+<p><strong>传输流程</strong><br><strong>1</strong>首先主机1发送http请求，使用DNS协议：进行域名转IP<br>域名转IP：首先在本机DNS缓存表找，如果找不到—-&gt;向上查找——&gt;如果根域名服务器也找不到，表示公网上没有该域名的主机</p>
+<p><strong>2.</strong> 找到IP，数据报IP部分，PORT部分都有了：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2021071015354550.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<ol>
+<li>根据目的IP计算是否和主机在同一个网段<br>主机1的IP+子网掩码 计算出——&gt;主机1的网段<br>目的IP+子网掩码 计算出——-&gt;目的主机的网段<br>通过上述计算，判断目的IP和主机是否在同一个网段</li>
+<li>如果是同一个网段，和局域网传输一样<br>如果不是同一个网段：发送数据到网关<br>找网关的MAC：<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153558152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></li>
+<li>找到网关的MAC之后，将http数据重新封装，交由交换机转发<br>交换机转发：在MAC地址转换表（MAC映射端口），通过目的MAC找端口（交换机的屁股口）<br>注意：这个过程没有封装和分用</li>
+</ol>
+<p>注意：前五个步骤，和路由器组成的局域网传输流程一样 参考：局域网传输</p>
+<ol>
+<li>路由器接收，分用数据报</li>
+</ol>
+<p>注意：路由器会根据最短路径算法，计算出下一个发送数据的设备，会离目的IP更近一步</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153613285.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><strong>7.</strong> 上述步骤之后，数据报由局域网到广域网进行传输<br>路途中的设备：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153623906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><strong>8.</strong> 数据报到达百度服务器之后<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153631881.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>**9.**数据由百度服务器返回，路途上经过的设备传输流程和步骤七相同（但是不一定是原路返回)<br>**10.**路由器1接收响应数据（对接收的数据进行分用，修改，封装)</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2021071015364661.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><strong>11.</strong> 之后的步骤，和局域网传输相同<br>主机接收数据报，分用</p>
+<h2 id="3-UDP和TCP"><a href="#3-UDP和TCP" class="headerlink" title="3.UDP和TCP"></a>3.UDP和TCP</h2><h3 id="lt-1-gt-UDP协议"><a href="#lt-1-gt-UDP协议" class="headerlink" title="&lt;1&gt;UDP协议"></a>&lt;1&gt;UDP协议</h3><p>UDP协议端格式：<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153659630.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>16位UDP校验和作用：类似于藏头诗，双方约定好的校验数据，进行数据校验</p>
+<p>UDP的特性：<br>1.无连接：没有建立连接就发数据<br>2.不可靠：没有类似TCP保证数据传输的安全机制，（连接管理机制，确认应答机制，超时机制<br>，）效率更高。<br>3.面向数据报：只能一次接收（系统级别的操作：调用系统函数）<br>4.没有发送缓冲区（发了消息就不管），有接收缓冲区<br>5.数据最大为64k<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153711417.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>发送缓冲区：主机1发送完数据，发出之后就不管了<br>接收缓冲区：<br>如果发送端调用一次sendto, 发送100个字节, 那么接收端也必须调用对应的一次recvfrom, 接收100个字节; 而不能循环调用10次recvfrom, 每次接收10个字节;<br>所以，接收数据的时候，发送100个字节，系统读取只调用一次，但是可以读取多次发来的其他100字节。<br>但是这个接收缓冲区不能保证收到的UDP报的顺序和发送UDP报的顺序一致; 如果缓冲区满了, 再到达的UDP数据就会被丢弃;</p>
+<h3 id="lt-2-gt-TCP协议-可靠的传输协议"><a href="#lt-2-gt-TCP协议-可靠的传输协议" class="headerlink" title="&lt;2&gt;TCP协议(可靠的传输协议)"></a>&lt;2&gt;TCP协议(可靠的传输协议)</h3><h4 id="1-TCP相关概念"><a href="#1-TCP相关概念" class="headerlink" title="(1)TCP相关概念"></a>(1)TCP相关概念</h4><p>TCP协议：可靠的传输协议，安全，效率(有连接的可靠传输协议)<br>设计TCP协议的理念：非100%安全，保证可承受范围内的安全，尽可能的提高网络传输数据的效率<br>TCP协议端格式：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/2021071015372260.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>六位标志位：<br>URG: 紧急指针是否有效<br>ACK: 确认号是否有效<br>PSH: 提示接收端应用程序立刻从TCP缓冲区把数据读走<br>RST: 对方要求重新建立连接; 我们把携带RST标识的称为复位报文段<br>SYN: 请求建立连接; 我们把携带SYN标识的称为同步报文段<br>FIN: 通知对方, 本端要关闭了, 我们称携带FIN标识的为结束报文段<br>重点掌握ACK,SYN,FIN</p>
+<h4 id="2-确认应答机制"><a href="#2-确认应答机制" class="headerlink" title="(2)确认应答机制"></a>(2)确认应答机制</h4><p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153734546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>主机A发送数据给主机B，每个数据都带了数据序号,主机B返回ACK应答<br>每一个ACK都带有对应的确认序列号, 意思是告诉发送者, 我已经收到了哪些数据; 下一次你从哪里开始发</p>
+<p>作用：<br>1.保证安全：保证‘我’发送的消息，对方必须确认并恢复<br>2.保证多条数据确认信息的安全（告诉发送者，这次回应是对哪些数据，下次数据发送应该从什么时候开始）</p>
+<h4 id="3-超时重传机制-安全机制"><a href="#3-超时重传机制-安全机制" class="headerlink" title="(3)超时重传机制(安全机制)"></a>(3)超时重传机制(安全机制)</h4><p>超时重传机制触发：主机A发送数据给主机B，如果主机A在一个特定的时间间隔内没有收到来自主机B的确认应答，就会进行数据重发。</p>
+<p>没有收到确认应答的情况：1.主机A的数据报在发送的过程中丢了。2.主机B的ACK应答丢了</p>
+<p>超时时间的确定：TCP会根据当时的网络状态，动态的计算数据发送的速度，得到单次数据报发送的最大生存时间（MSL），超时时间即为（2MSL）</p>
+<p>了解：如果一直接收不到ACK，超时时间会如何处理？<br>Linux中(BSD Unix和Windows也是如此), 超时以500ms为一个单位进行控制, 每次判定超时重发的超时时间都是500ms的整数倍.<br>如果重发一次之后, 仍然得不到应答, 等待 2500ms 后再进行重传.<br>如果仍然得不到应答, 等待 4500ms 进行重传. 依次类推, 以指数形式递增（2的指数倍）.<br>累计到一定的重传次数, TCP认为网络或者对端主机出现异常, 强制关闭连接.</p>
+<h4 id="4-连接管理机制（安全机制）"><a href="#4-连接管理机制（安全机制）" class="headerlink" title="(4)连接管理机制（安全机制）"></a>(4)连接管理机制（安全机制）</h4><p>流程图：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153751100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><strong>1.建立连接——&gt;TCP三次握手:</strong></p>
+<p>TCP——&gt;三次握手的流程</p>
+<p>1.主机A发送syn到主机B，要求建立a到b的连接。此时主机A的状态为syn_sent<br>2.主机B回复ack+syn（这里的ack和syn数据报本来是两个，但是仅标志位不同，所以可以合并,为什么不是四次的原因），要求建立b到a的连接，主机B的状态为syn_rcvd<br>3.主机A回复第2步syn的ack。主机A的状态为established，建立A到B的连接<br>主机B接收到第3步的数据报，建立B到A 的连接，主机B的状态置为established</p>
+<p>TCP——&gt;三次握手中的问题：<br>1.syn为什么有两个？<br>双方的连接状态会持续，且连接是有方向的</p>
+<p>2.第二步中，为什么是ack+syn？<br>本质上是一个发ack应答，一个发syn请求，而且是方向一致的两个数据报，可以合并</p>
+<p>3.第三步中，ack确认应答哪个？<br>应答第二步的syn</p>
+<p><strong>2.断开连接——&gt;TCP四次挥手:</strong></p>
+<p>TCP——&gt;四次挥手的流程<br>1.主机A发送fin到主机B，请求关闭a到b的连接<br>2.主机B回复ack，主机B的状态置为close_wait<br>3.主机B发送fin到主机A，请求关闭b到a的连接<br>4.值即A回复ack（第三步的fin），状态置为time_wait<br>主机B接收到第四步的数据报，状态置为closed<br>主机A经过2MSL（超时等待时间）之后，状态置为closed</p>
+<p>TCP——&gt;4次挥手中的问题<br>1.第2步和第3步为什么不能和3次握手流程一样，进行合并<br>原因：第2步是TCP协议在系统内核中实现时，自动响应的ack<br>第3步时应用程序手动调用close来关闭连接的<br>程序在关闭连接之前，可能需要执行释放资源等前置操作，所以不能合并（TCP协议实现时，没有这样进行设计）</p>
+<p>2.第3步中，主机A为什么不能直接设置为closed状态<br>原因： 第4个数据报可能丢包，如果直接置为closed，丢包后无法重新发送数据。<br>主机B达到超时时间之后，会重发第三个数据报，然后要求主机A再次回复ack</p>
+<p>3.服务器出现大量的close_wait状态，是为什么？<br>服务端没有正确的关闭连接（程序没有调用close，或者没有正确使用）</p>
+<h4 id="5-滑动窗口（效率）"><a href="#5-滑动窗口（效率）" class="headerlink" title="(5)滑动窗口（效率）"></a>(5)滑动窗口（效率）</h4><p>如果没有滑动窗口，网路数据传输就是串行的方式（发送一次之后，等待应答，这个时间内，主机A无事可做，主机B也一样），效率比较差。</p>
+<p>使用滑动窗口可以解决效率的问题：类似于多线程的方式，并发的，同时发送多个数据报。<br>如下图：</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153815495.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>1.窗口大小指的是无需等待确认应答而可以继续发送数据的最大值. 上图的窗口大小就是4000个字节(四个段).<br>2.发送前四个段的时候, 不需要等待任何ACK, 直接发送;<br>3.收到第一个ACK后, 滑动窗口向后移动, 继续发送第五个段的数据; 依次类推;<br>4.操作系统内核为了维护这个滑动窗口, 需要开辟 发送缓冲区 来记录当前还有哪些数据没有应答;只有确认应答过的数据, 才能从缓冲区删掉;<br>5.窗口越大, 则网络的吞吐率就越高;</p>
+<p>丢包问题：<br>1.数据报丢包</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153846997.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>如上图：如果主机A发送的数据报丢包，主机B的ack应答，会根据主机A已经收到的连续数据报的最大值+1返回ack应答，当主机A收到三个同样的ack应答之后，会将丢掉的数据报进行重发（具有接收缓冲区，来记录已经接收的数据报的序号）</p>
+<p>2.ACK应答丢包：这种情况下, 部分ACK丢了并不要紧, 因为可以通过后续的ACK进行确认<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153857920.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>如果是滑动窗口的第一个包丢了，根据上述数据报丢包的情况，收到了第6个报的ACK应答，是从6001开始，说明第一个报主机B已经收到，所以ack丢包可以根据后序ack确定数据报主机B是否收到</p>
+<p>关于滑动窗口的几个问题：<br>&lt;1&gt;.滑动窗口的大小：无需等待确认应答而可以继续发送数据的最大值<br>&lt;2&gt;.如何确定窗口的大小：由拥塞窗口和流量控制窗口决定（滑动窗口大小=（拥塞窗口大小，流量控制大小））（后序会讲到）<br>&lt;3&gt;.如何滑动：依赖于ACK的确认序号（ack确认序号前的数据报都已经接收到了），在该ACK确认序号前，当次并行收到了多少个数据报，就可以滑动多少<br>&lt;4.&gt;为什么要有接收缓冲区和发送缓冲区：<br>发送端的发送缓冲区：记录已经发送的数据——搜到对应的ACK应答，才可以清理该数据<br>接收端的接收缓冲区：记录已经接收的数据——如果发送数据报丢包，才知道让对方重发</p>
+<h4 id="6-流量控制机制（安全机制）"><a href="#6-流量控制机制（安全机制）" class="headerlink" title="(6)流量控制机制（安全机制）"></a>(6)流量控制机制（安全机制）</h4><p>接收端处理数据的速度是有限的. 如果发送端发的太快, 导致接收端的缓冲区被打满, 这个时候如果发送端继续发送, 就<br>会造成丢包, 继而引起丢包重传等等一系列连锁反应.</p>
+<p>接收端将自己可以接收的缓冲区大小放入 TCP 首部中的 “窗口大小” 字段, 通过ACK端通知发送端;<br>窗口大小字段越大, 说明网络的吞吐量越高;<br>接收端一旦发现自己的缓冲区快满了, 就会将窗口大小设置成一个更小的值通知给发送端;<br>发送端接受到这个窗口之后, 就会减慢自己的发送速度;<br>如果接收端缓冲区满了, 就会将窗口置为0; 这时发送方不再发送数据, 但是需要定期发送一个窗口探测数据<br>段, 使接收端把窗口大小告诉发送端.</p>
+<p>当接收端使用流量控制窗口时，如何保证接受端的数据安全？<br>告诉发送端，影响发送端滑动窗口的大小</p>
+<h4 id="7-拥塞控制机制（安全机制）"><a href="#7-拥塞控制机制（安全机制）" class="headerlink" title="(7)拥塞控制机制（安全机制）"></a>(7)拥塞控制机制（安全机制）</h4><p>少量的丢包, 我们仅仅是触发超时重传; 大量的丢包, 我们就认为网络拥塞;</p>
+<p>发送端在网络状态不明的情况下，贸然发送大量的数据，会造成网络拥堵，需要先发送少量数据探路，设置拥塞窗口的大小<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153917846.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>如上图：如何确定拥塞窗口的大小<br>此处引入一个概念程为拥塞窗口<br>发送开始的时候, 定义拥塞窗口大小为1;<br>每次收到一个ACK应答, 拥塞窗口加1;<br>每次发送数据包的时候, 将拥塞窗口和接收端主机反馈的窗口大小做比较, 取较小的值作为实际发送的窗口;<br>为了不增长的那么快, 因此不能使拥塞窗口单纯的加倍.<br>此处引入一个叫做慢启动的阈值<br>当拥塞窗口超过这个阈值的时候, 不再按照指数方式增长, 而是按照线性方式增长</p>
+<h4 id="8-延迟应答机制-效率"><a href="#8-延迟应答机制-效率" class="headerlink" title="(8)延迟应答机制(效率)"></a>(8)延迟应答机制(效率)</h4><p>举个例子：<br>假设接收端缓冲区为1M. 一次收到了500K的数据; 如果立刻应答, 返回的窗口就是500K;<br>但实际上可能处理端处理的速度很快, 10ms之内就把500K数据从缓冲区消费掉了;<br>在这种情况下, 接收端处理还远没有达到自己的极限, 即使窗口再放大一些, 也能处理过来;<br>如果接收端稍微等一会再应答, 比如等待200ms再应答, 那么这个时候返回的窗口大小就是1M;</p>
+<p>延迟应答类型：<br>数量限制: 每隔N个包就应答一次;<br>时间限制: 超过最大延迟时间就应答一次;</p>
+<h4 id="9-捎带机制（效率）"><a href="#9-捎带机制（效率）" class="headerlink" title="(9)捎带机制（效率）"></a>(9)捎带机制（效率）</h4><p>在延迟应答的基础上, 我们发现, 很多情况下, 客户端服务器在应用层也是 “一发一收” 的，意味着当客户端给服务端发送请求时，服务端会给客户端响应数据，此时ACK就像可以搭请求数据的顺风车，一起发送。</p>
+<p>接收端响应的ACK，和主动发送的数据，可以合并返回。</p>
+<h3 id="lt-3-gt-TCP的总结"><a href="#lt-3-gt-TCP的总结" class="headerlink" title="&lt;3&gt;TCP的总结"></a>&lt;3&gt;TCP的总结</h3><h4 id="1-TCP特性"><a href="#1-TCP特性" class="headerlink" title="(1)TCP特性"></a>(1)TCP特性</h4><p>TCP是有连接的可靠协议</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153931432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h4 id="2-面向字节流"><a href="#2-面向字节流" class="headerlink" title="(2)面向字节流"></a>(2)面向字节流</h4><p>TCP既有发送缓冲区，也有接收缓冲区，数据没有大小限制</p>
+<p>调用write时, 数据会先写入发送缓冲区中;<br>如果发送的字节数太长, 会被拆分成多个TCP的数据包发出;<br>如果发送的字节数太短, 就会先在缓冲区里等待, 等到缓冲区长度差不多了, 或者其他合适的时机发送出去;<br>接收数据的时候, 数据也是从网卡驱动程序到达内核的接收缓冲区;<br>然后应用程序可以调用read从接收缓冲区拿数据;<br>另一方面, TCP的一个连接, 既有发送缓冲区, 也有接收缓冲区, 那么对于这一个连接, 既可以读数据, 也可以写数据. 这个概念叫做 全双工</p>
+<h4 id="3-粘包问题"><a href="#3-粘包问题" class="headerlink" title="(3)粘包问题"></a>(3)粘包问题</h4><p>在TCP的协议头中, 没有如同UDP一样的 “报文长度” 这样的字段, 但是有一个序号这样的字段<br>站在传输层角度看，报文是一个一个按照顺序排序好放在缓冲区，但是站在应用层角度看，都是一个个数字，不知道哪个数字是一段保文的开头，也不知道哪一个数字是结尾。这就是粘包<br>所以得明确一个报文的开头和结尾</p>
+<p>但是对应UDP来说：<br>对于UDP, 如果还没有上层交付数据, UDP的报文长度仍然在. 同时, UDP是一个一个把数据交付给应用层.就有很明确的数据边界.<br>站在应用层的站在应用层的角度, 使用UDP的时候, 要么收到完整的UDP报文, 要么不收. 不会出现”半个”的情况</p>
+<h3 id="lt-4-gt-UDP-VS-TCP"><a href="#lt-4-gt-UDP-VS-TCP" class="headerlink" title="&lt;4&gt;UDP VS TCP"></a>&lt;4&gt;UDP VS TCP</h3><h4 id="1-UDP和TCP的特性"><a href="#1-UDP和TCP的特性" class="headerlink" title="(1)UDP和TCP的特性"></a>(1)UDP和TCP的特性</h4><p>TCP用于可靠传输的情况, 应用于文件传输, 重要状态更新等场景;<br>UDP用于对高速传输和实时性要求较高的通信领域, 例如, 早期的QQ, 视频传输等. 另外UDP可以用于广播</p>
+<h4 id="2-如何使用UDP进行可靠传输"><a href="#2-如何使用UDP进行可靠传输" class="headerlink" title="(2)如何使用UDP进行可靠传输"></a>(2)如何使用UDP进行可靠传输</h4><p>引入序列号, 保证数据顺序;<br>引入确认应答, 确保对端收到了数据;<br>引入超时重传, 如果隔一段时间没有应答, 就重发数据;</p>
+<h2 id="4-MTU和IP协议"><a href="#4-MTU和IP协议" class="headerlink" title="4.MTU和IP协议"></a>4.MTU和IP协议</h2><h3 id="lt-1-gt-MTU协议"><a href="#lt-1-gt-MTU协议" class="headerlink" title="&lt;1&gt;MTU协议"></a>&lt;1&gt;MTU协议</h3><p>MTU相当于发快递时对包裹尺寸的限制. 这个限制是不同的数据链路对应的物理层, 产生的限制.<br>以太网帧中的数据长度规定最小46字节,最大1500字节,ARP数据包的长度不够46字节,要在后面补填充位;最大值1500称为以太网的最大传输单元(MTU),不同的网络类型有不同的MTU;<br>如果一个数据包从以太网路由到拨号链路上,数据包长度大于拨号链路的MTU了,则需要对数据包进行分片<br>不同的数据链路层标准的MTU是不同的;</p>
+<h3 id="lt-2-gt-IP协议"><a href="#lt-2-gt-IP协议" class="headerlink" title="&lt;2&gt;IP协议"></a>&lt;2&gt;IP协议</h3><p>1.协议头格式</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710153949642.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>简单了解：<br>4位版本号(version): 指定IP协议的版本, 对于IPv4来说, 就是4.</p>
+<p>8位服务类型(Type Of Service): 3位优先权字段(已经弃用), 4位TOS字段, 和1位保留字段(必须置为0). 4位 TOS分别表示: 最小延时, 最大吞吐量, 最高可靠性, 最小成本. 这四者相互冲突, 只能选择一个. 对于ssh/telnet这样的应用程序, 最小延时比较重要; 对于ftp这样的程序, 最大吞吐量比较重要（应用层协议需要不同安全/效率需求，此时可以设置服务类型来满足）</p>
+<p>下面三个字段都与数据链路层MTU相关：<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154000590.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h2 id="5-HTTP和HTTPS"><a href="#5-HTTP和HTTPS" class="headerlink" title="5.HTTP和HTTPS"></a>5.HTTP和HTTPS</h2><h3 id="lt-1-gt-HTTP"><a href="#lt-1-gt-HTTP" class="headerlink" title="&lt;1&gt;HTTP"></a>&lt;1&gt;HTTP</h3><h4 id="1-Http的前置知识"><a href="#1-Http的前置知识" class="headerlink" title="(1)Http的前置知识"></a>(1)Http的前置知识</h4><h5 id="1-网络数据传输"><a href="#1-网络数据传输" class="headerlink" title="1)网络数据传输"></a>1)网络数据传输</h5><p>网络数据传输，都需要使用相同的协议，双方约定好的统一规范（封装和解析的数据格式规范）<br>协议：数据格式的约定<br>目标：对于http协议来说，就是学习里边的协议格式。结合理论实操，进行程序的调试，http协议格式本身，http数据中，包括自己的数据格式</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154021308.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h5 id="2-认识URL"><a href="#2-认识URL" class="headerlink" title="2)认识URL"></a>2)认识URL</h5><p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154051539.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h4 id="2-HTTP"><a href="#2-HTTP" class="headerlink" title="(2)HTTP"></a>(2)HTTP</h4><h5 id="1-域名"><a href="#1-域名" class="headerlink" title="1)域名"></a>1)域名</h5><p>域名：基于DNS解析为IP<br>IP：网络中定位主机的地址（逻辑地址）<br>PORT：端口号，定位某个主机中唯一的进程（应用程序）<br>url：url是全路径（绝对路径）<br>uri：uri包含了url这种全路径，还包含相对路径<br>特殊注意事项：输入域名直接访问，其实是访问/这个资源的路径。<br>浏览器中，不输入端口号，是因为http协议的默认端口是80<br>url中的请求数据：请求路径？key1=value1&amp;key2=value2…<br>问号前代表绝对路径，问号后代表请求的资源，数据</p>
+<h5 id="2-http协议格式"><a href="#2-http协议格式" class="headerlink" title="2)http协议格式"></a>2)http协议格式</h5><p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154113479.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h5 id="3-http请求方法"><a href="#3-http请求方法" class="headerlink" title="3)http请求方法"></a>3)http请求方法</h5><p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154124450.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p><strong>重点了解get和post方法</strong></p>
+<p><strong>get和post方法的区别：</strong></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154135633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<blockquote>
+<p>1.get的请求数据只能放在url中，post的数据，可以放在url和请求体</p>
+<p>2.url长度有限制，所有get方法请求数据不能太多，冰球url只能传输ascli字符</p>
+<p>3.安全性将，post可以存放请求数据在请求体，相对更加安全</p>
+<p>其他区别：了解即可</p>
+</blockquote>
+<h5 id="4-http状态码"><a href="#4-http状态码" class="headerlink" title="4)http状态码"></a>4)http状态码</h5><p>服务端返回（服务端设置），站在服务端的角色上，状态码都是对应的含义，站在客户端的角色上就不一定</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154143854.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>注：x表示0到9的数字<br><strong>重点掌握：</strong></p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154204457.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h5 id="5-http头信息"><a href="#5-http头信息" class="headerlink" title="5)http头信息"></a>5)http头信息</h5><p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154213123.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<h3 id="lt-2-gt-HTTPS"><a href="#lt-2-gt-HTTPS" class="headerlink" title="&lt;2&gt;HTTPS"></a>&lt;2&gt;HTTPS</h3><p>HTTP是明文传输的，不安全<br>HTTPS是基于HTTP+SSL/TSL来实现的，发送的数据需要加密，接收到的数据需要解密，比HTTP安全，但是传输效率比HTTP低</p>
+<p>&lt;1&gt;.前置知识：为什么需要HTTPS</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154226939.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>如上图：HTTP是不安全的，在传输的过程中，当客户端发送数据时，可能被钓鱼网站“欺骗”，将钓鱼网站当作服务端，或者直接被钓鱼网站窃取到数据，然后更改，造成不安全的影响</p>
+<p>此时需要解决：<br>a：如何保证服务器是真实的，不是钓鱼网站？<br>b：解决网络数据传输，使用明文，所有路途中的设备，如果获取到，存在信息泄露</p>
+<p>所以，就要使用到证书来解决安全问题<br>a：权威的证书机构颁发的证书（安装浏览器时，初始化就内置权威证书）（解决上述a问题）<br>b：https服务器证书（解决上述b问题）</p>
+<p>私钥，公钥，密钥：<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154240788.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>密钥：客户端，服务端用来加解密<br>对称加密：使用同一个钥匙，来加解密<br>公钥的生成（SSL握手阶段）： 见SLL握手</p>
+<p>https中涉及的细节：<br>1.使用公钥和私钥来生成密钥（这里是非对称加密生成密钥）<br>2.密钥加解密真正的数据（这里进行的对称加密，效率比非对称加密高）</p>
+<p>如何获取并验证服务器证书：<br><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154252625.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>具体流程：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html">流程</a><br>1.用密钥进行加解密：<br>&lt;1&gt;.客户端向服务端索要并验证公钥<br>&lt;2&gt;.双放协商生成”对话密钥”<br>&lt;3&gt;.双方采用“对话密钥”进行加解密通信</p>
+<p>2.HTTPS握手阶段（根据公钥私钥生成对话密钥）（以上1，2步需要保证对话密钥不被钓鱼）</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210710154311431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>&lt;1&gt;.首先客户端给出协议版本号，一个客户端生成的随机数，以及支持的加密方式</p>
+<p>&lt;2&gt;.服务端确认双方使用的加密方式，给出数字证书，以及一个服务器生成的随机数</p>
+<p>&lt;3&gt;.客户端确认数字证书有效，然后生成一个新的随机数，并使用数字证书中的公钥，加密这个随机数，发个服务端</p>
+<p>&lt;4&gt;.服务端使用自己的私钥，获取客户端发来的随机数</p>
+<p>&lt;5&gt;.客户端和服务端根据约定的加密方式，使用前面的三个随机数，生成密钥</p>
+<p>3.发送数据的阶段：<br>客户端使用对话密钥加解密真正的数据<br>服务端使用对话密钥加解密真正的数据<br>注意：此部分被钓鱼也没有关系（对话密钥无法解密）</p>
+<h2 id="6-正向代理和反向代理"><a href="#6-正向代理和反向代理" class="headerlink" title="6.正向代理和反向代理"></a>6.正向代理和反向代理</h2><h3 id="lt-1-gt-正向代理服务器"><a href="#lt-1-gt-正向代理服务器" class="headerlink" title="&lt;1&gt;.正向代理服务器"></a>&lt;1&gt;.正向代理服务器</h3><p>&lt;1&gt;概念</p>
+<p>正向代理服务器：抓包工具<br>正向代理是一个位于客户端和目标服务器之间的代理服务器(中间服务器)。为了从原始服务器取得内容，客户端向代理服务器发送一个请求，并且指定目标服务器，之后代理向目标服务器转交并且将获得的内容返回给客户端。正向代理的情况下客户端必须要进行一些特别的设置才能使用。</p>
+<p>&lt;2&gt;原理图</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210129210209729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>&lt;3&gt;使用场景和特点</p>
+<p>1.特点：要访问的服务器只知道代理服务器来访问它，并不知道真实的客户端是谁<br>2.使用场景：正向代理的典型用途是为在防火墙内的局域网客户端提供访问Internet的途径。正向代理还可以使用缓冲特性减少网络使用率。</p>
+<h3 id="lt-2-gt-反向代理服务器"><a href="#lt-2-gt-反向代理服务器" class="headerlink" title="&lt;2&gt;.反向代理服务器"></a>&lt;2&gt;.反向代理服务器</h3><p>&lt;1&gt;概念</p>
+<p>反向代理服务器：nginx等<br>反向代理正好相反。对于客户端来说，反向代理就好像目标服务器。并且客户端不需要进行任何设置。客户端向反向代理发送请求，接着反向代理判断请求走向何处，并将请求转交给客户端，使得这些内容就好似他自己一样，一次客户端并不会感知到反向代理后面的服务，也因此不需要客户端做任何设置，只需要把反向代理服务器当成真正的服务器就好了</p>
+<p>&lt;2&gt;原理图</p>
+<p><img   class="lazyload" data-original="https://img-blog.csdnimg.cn/20210129210221594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzA0NTI4,size_16,color_FFFFFF,t_70" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">在这里插入图片描述</span></p>
+<p>&lt;3&gt;使用场景和特点</p>
+<p>1.特点:特点:反向代理服务器隐藏了真实服务器的信息，例如淘宝，京东，天猫等<br>2.使用场景:<br>反向代理的典型用途是将 防火墙后面的服务器提供给Internet用户访问。反向代理还可以为后端的多台服务器提供负载平衡，或为后端较慢的服务器提供缓冲服务。</p>
+<h2 id="7-网络面试题"><a href="#7-网络面试题" class="headerlink" title="7.网络面试题"></a>7.网络面试题</h2><h3 id="lt-1-gt-说一说TCP-IP模型，以及都做了哪些事情"><a href="#lt-1-gt-说一说TCP-IP模型，以及都做了哪些事情" class="headerlink" title="&lt;1&gt;.说一说TCP/IP模型，以及都做了哪些事情"></a>&lt;1&gt;.说一说TCP/IP模型，以及都做了哪些事情</h3><p>TCP/IP模型分为五层，分别是应用层，传输层，网络层，数据链路层，物理层</p>
+<p>TCP/IP协议群主要是报文的拆分，增加协议头，数据的传输，路由和寻址以及数据的重组</p>
+<h3 id="lt-2-gt-说一说TCP的三次握手四次挥手"><a href="#lt-2-gt-说一说TCP的三次握手四次挥手" class="headerlink" title="&lt;2&gt;.说一说TCP的三次握手四次挥手"></a>&lt;2&gt;.说一说TCP的三次握手四次挥手</h3><p><strong>1.建立连接——&gt;TCP三次握手:</strong></p>
+<p>TCP——&gt;三次握手的流程</p>
+<p>1.主机A发送syn到主机B，要求建立a到b的连接。此时主机A的状态为syn_sent<br>2.主机B回复ack+syn（这里的ack和syn数据报本来是两个，但是仅标志位不同，所以可以合并,为什么不是四次的原因），要求建立b到a的连接，主机B的状态为syn_rcvd<br>3.主机A回复第2步syn的ack。主机A的状态为established，建立A到B的连接<br>主机B接收到第3步的数据报，建立B到A 的连接，主机B的状态置为established</p>
+<p>TCP——&gt;三次握手中的问题：<br>1.syn为什么有两个？<br>双方的连接状态会持续，且连接是有方向的</p>
+<p>2.第二步中，为什么是ack+syn？<br>本质上是一个发ack应答，一个发syn请求，而且是方向一致的两个数据报，可以合并</p>
+<p>3.第三步中，ack确认应答哪个？<br>应答第二步的syn</p>
+<p><strong>2.断开连接——&gt;TCP四次挥手:</strong></p>
+<p>TCP——&gt;四次挥手的流程<br>1.主机A发送fin到主机B，请求关闭a到b的连接<br>2.主机B回复ack，主机B的状态置为close_wait<br>3.主机B发送fin到主机A，请求关闭b到a的连接<br>4.值即A回复ack（第三步的fin），状态置为time_wait<br>主机B接收到第四步的数据报，状态置为closed<br>主机A经过2MSL（超时等待时间）之后，状态置为closed</p>
+<p>TCP——&gt;4次挥手中的问题<br>1.第2步和第3步为什么不能和3次握手流程一样，进行合并<br>原因：第2步是TCP协议在系统内核中实现时，自动响应的ack<br>第3步时应用程序手动调用close来关闭连接的<br>程序在关闭连接之前，可能需要执行释放资源等前置操作，所以不能合并（TCP协议实现时，没有这样进行设计）</p>
+<p>2.第3步中，主机A为什么不能直接设置为closed状态<br>原因： 第4个数据报可能丢包，如果直接置为closed，丢包后无法重新发送数据。<br>主机B达到超时时间之后，会重发第三个数据报，然后要求主机A再次回复ack</p>
+<p>3.服务器出现大量的close_wait状态，是为什么？<br>服务端没有正确的关闭连接（程序没有调用close，或者没有正确使用）</p>
+<h3 id="lt-3-gt-IPV4和IPV6的区别"><a href="#lt-3-gt-IPV4和IPV6的区别" class="headerlink" title="&lt;3&gt;IPV4和IPV6的区别"></a>&lt;3&gt;IPV4和IPV6的区别</h3><p>1.地址不同（IPV4 32位，IPV6 128位），所有地址的空间，数目不同</p>
+<p>2.地址分配不同（IPV4资源不够，分配的话需要竞争，而IPV6可以给每个人都分配很多的地址）</p>
+<p>3.寻址的方式不同：IPV4 通过子网掩码计算网络地址，而IPV6有固定的计算方式划分网络</p>
+<h3 id="lt-4-gt-TCP和UDP的区别"><a href="#lt-4-gt-TCP和UDP的区别" class="headerlink" title="&lt;4&gt;TCP和UDP的区别"></a>&lt;4&gt;TCP和UDP的区别</h3><p>1.TCP是有连接的可靠传输协议，而UDP是无连接的<br>2.UDP传时数据是有大小限制的，而TCP没有<br>3.UDP是面向数据报的，而TCP是面向数据流的。<br>4.TCP保证数据正确性，顺序性，而UDP不能保证.</p>
+<p>5.UDP的传输速率高于TCP</p>
+<h3 id="lt-5-gt-如何用UDP进行可靠传输"><a href="#lt-5-gt-如何用UDP进行可靠传输" class="headerlink" title="&lt;5&gt;如何用UDP进行可靠传输"></a>&lt;5&gt;如何用UDP进行可靠传输</h3><p>引入序列号, 保证数据顺序;<br>引入确认应答, 确保对端收到了数据;<br>引入超时重传, 如果隔一段时间没有应答, 就重发数据;</p>
+<h3 id="lt-6-gt-正向代理和反向代理的区别"><a href="#lt-6-gt-正向代理和反向代理的区别" class="headerlink" title="&lt;6&gt;正向代理和反向代理的区别"></a>&lt;6&gt;正向代理和反向代理的区别</h3><p>正向代理：要访问的服务器只知道代理服务器来访问它，并不知道真实的客户端是谁</p>
+<p>反向代理：反向代理正好相反。对于客户端来说，反向代理就好像目标服务器，客户端向反向代理发送请求，接着反向代理判断请求走向何处，隐藏了真实的服务器。</p>
+<h3 id="lt-7-gt-说说HTTP和HTTPS"><a href="#lt-7-gt-说说HTTP和HTTPS" class="headerlink" title="&lt;7&gt;说说HTTP和HTTPS"></a>&lt;7&gt;说说HTTP和HTTPS</h3><p>HTTP是超文本传输协议，是目前应用最广泛的网络通信协议，也是客户端和服务端交互的一系列行为的标准</p>
+<p>http header包含三大部分，有General。Response Headers（响应头）。 Request Headers（请求头）。</p>
+<p>http是无连接，无状态的（每次连接只处理一个请求，发送完数据后，不会记录）</p>
+<p>而https简单讲是HTTP的安全版，即HTTP下加入SSL层，主要是来确认网站的真实性和数据传输的安全。</p>
+<p>区别：</p>
+<p>1.http的数据是明文传输，而https是加密传输，需要用到ca证书</p>
+<p>2.http使用80端口，而https是443端口</p>
+<p>3.http的速度比https要快</p>
+<h3 id="lt-8-gt-https中SSL握手的过程"><a href="#lt-8-gt-https中SSL握手的过程" class="headerlink" title="&lt;8&gt;https中SSL握手的过程"></a>&lt;8&gt;https中SSL握手的过程</h3><p>&lt;1&gt;.首先客户端给出协议版本号，一个客户端生成的随机数，以及支持的加密方式</p>
+<p>&lt;2&gt;.服务端确认双方使用的加密方式，给出数字证书，以及一个服务器生成的随机数</p>
+<p>&lt;3&gt;.客户端确认数字证书有效，然后生成一个新的随机数，并使用数字证书中的公钥，加密这个随机数，发个服务端</p>
+<p>&lt;4&gt;.服务端使用自己的私钥，获取客户端发来的随机数</p>
+<p>&lt;5&gt;.客户端和服务端根据约定的加密方式，使用前面的三个随机数，生成密钥</p>
+<h3 id="lt-9-gt-DNS解析（DNS找IP）"><a href="#lt-9-gt-DNS解析（DNS找IP）" class="headerlink" title="&lt;9&gt;DNS解析（DNS找IP）"></a>&lt;9&gt;DNS解析（DNS找IP）</h3><p>1.当浏览器中输入<a target="_blank" rel="noopener" href="http://www.bai.com域名时,操作系统会检查自己本地的hosts文件查看是否有这个网址的映射关系,如果有,直接调用/">www.bai.com域名时，操作系统会检查自己本地的hosts文件查看是否有这个网址的映射关系，如果有，直接调用</a></p>
+<p>2.如果没有，则查找本地的DNS解析器缓存，如果有，则直接返回IP</p>
+<p>3.如果没有，再找TCP/IP参数中设置的本地的DNS服务器，如果该域名包含再本地配置区域的资源中，则返回解析结果。</p>
+<p>4.也可能查找的域名，本地的DNS服务器已经缓存在网址的映射关系，那么直接调用这个IP</p>
+<p>5.如果本地DNS服务器也无法解析，会根据本地的DNS服务器是否设置转发器进行查询</p>
+<p>如果是未转发模式，本地DNS会把请求发给13台根DNS，由对应的根服务器（例如.com）向下找，最后完成解析</p>
+<p>如果是转发模式，那么DNS服务器会把请求一级一级向上传，往上找，直到传到根DNS。</p>
+<h3 id="lt-10-gt-GET和POST的区别"><a href="#lt-10-gt-GET和POST的区别" class="headerlink" title="&lt;10&gt;GET和POST的区别"></a>&lt;10&gt;GET和POST的区别</h3><p>1.get的请求数据只能放在url中，post的数据，可以放在url和请求体</p>
+<p>2.url长度有限制，所有get方法请求数据不能太多，并且url只能传输ascli字符</p>
+<p>3.安全性将，post可以存放请求数据在请求体，相对更加安全</p>
+<p>4.GET主要是从服务端获取数据，而POST请求主要是将数据发送到服务端</p>
+<p>5.POST请求刷新会被重新提交，但Get请求不会</p>
+<h3 id="lt-11-gt-常见的状态码"><a href="#lt-11-gt-常见的状态码" class="headerlink" title="&lt;11&gt;常见的状态码"></a>&lt;11&gt;常见的状态码</h3><p>400:客户端请求语法错误，服务端无法理解</p>
+<p>405：映射找到了，但是客户端请求方法和服务端提供的请求方法不匹配</p>
+<p>500:服务端内部报错</p>
+<p>403：无权限</p>
+<h3 id="lt-12-gt-输入一个URL到浏览器中，会发生什么"><a href="#lt-12-gt-输入一个URL到浏览器中，会发生什么" class="headerlink" title="&lt;12&gt;输入一个URL到浏览器中，会发生什么"></a>&lt;12&gt;输入一个URL到浏览器中，会发生什么</h3><p>1.域名解析(DNS解析)</p>
+<p>2.发起TCP的三次握手</p>
+<p>3.建立TCP连接后发起HTTP请求（如果浏览器存储了该域名下的Cookies，那么会把Cookies放入HTTP请求头里发给服务器。）</p>
+<p>4.服务器端响应http请求，浏览器得到html代码</p>
+<p>5.浏览器解析html代码，并请求html代码中的资源</p>
+<p>6.浏览器对页面进行渲染呈现给用户</p>
 
       </section>
       <section class="extra">
@@ -745,8 +428,8 @@
         
         
   <nav class="nav">
-    <a href="/2021/06/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"><i class="iconfont iconleft"></i>计算机组成原理</a>
-    <a href="/2021/04/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习<i class="iconfont iconright"></i></a>
+    <a href="/2021/07/13/Untitled/"><i class="iconfont iconleft"></i></a>
+    <a href="/2021/06/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统<i class="iconfont iconright"></i></a>
   </nav>
 
       </section>
@@ -790,7 +473,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0"><span class="toc-text">第一章 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E5%86%85%E5%AE%B9"><span class="toc-text">重要内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86"><span class="toc-text">计算机网络的一些相关知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%92%E8%81%94%E7%BD%91%E6%A6%82%E8%BF%B0"><span class="toc-text">互联网概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%A0%E7%89%B9%E7%BD%91%E5%8F%91%E5%B1%95%E7%9A%84%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5%E2%80%94%E2%80%94"><span class="toc-text">因特网发展的三个阶段——</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">互联网的组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E7%B1%BB%E5%88%AB"><span class="toc-text">计算机网络的类别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-text">计算机网络的性能指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%9D%9E%E6%80%A7%E8%83%BD%E7%89%B9%E5%BE%81"><span class="toc-text">其他非性能特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP%E5%8D%8F%E8%AE%AE"><span class="toc-text">TCP&#x2F;IP协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-text">第二章 物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E5%86%85%E5%AE%B9-1"><span class="toc-text">重要内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">物理层的基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">数据通信的基本知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="toc-text">第三章 数据链路层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E5%86%85%E5%AE%B9-2"><span class="toc-text">重要内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%82%B9%E5%AF%B9%E7%82%B9%E5%8D%8F%E8%AE%AEPPP"><span class="toc-text">点对点协议PPP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%84%E5%AD%97%E6%AE%B5%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-text">各字段的意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">适配器的作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSMA-CD%E5%8D%8F%E8%AE%AE"><span class="toc-text">CSMA&#x2F;CD协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-text">第四章 网络层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E5%86%85%E5%AE%B9-3"><span class="toc-text">重要内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E4%BA%92%E8%81%94%E7%BD%91%E7%BB%9C%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">虚拟互联网络的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB%E7%9A%84IP%E5%9C%B0%E5%9D%80"><span class="toc-text">分类的IP地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IP%E5%9C%B0%E5%9D%80%E4%B8%8E%E7%A1%AC%E4%BB%B6%E5%9C%B0%E5%9D%80"><span class="toc-text">IP地址与硬件地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9%E5%8D%8F%E8%AE%AE"><span class="toc-text">互联网的路由选择协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AEOSPF"><span class="toc-text">内部网关协议OSPF</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IGMP%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8A%9F%E8%83%BD%EF%BC%9A"><span class="toc-text">IGMP协议的功能：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%B1%82-%E8%BF%90%E8%BE%93%E5%B1%82"><span class="toc-text">第五层 运输层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E5%86%85%E5%AE%B9-4"><span class="toc-text">重要内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%BA%94%E7%94%A8%E5%B1%82"><span class="toc-text">第六章 应用层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9FDNS"><span class="toc-text">域名系统DNS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%BC%A0%E9%80%81%E5%8D%8F%E8%AE%AEFTP"><span class="toc-text">文件传送协议FTP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="toc-text">URL的格式:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8"><span class="toc-text">第七章 网络安全</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%8A%E7%9A%84%E9%9F%B3%E8%A7%86%E9%A2%91%E6%9C%8D%E5%8A%A1"><span class="toc-text">第八章 互联网上的音视频服务</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C"><span class="toc-text">网络</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AF%B9%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86"><span class="toc-text">1.对网络的基础认识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-1-gt-%E7%BB%84%E7%BD%91%E6%96%B9%E5%BC%8F"><span class="toc-text">&lt;1&gt;.组网方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-2-gt-OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-text">&lt;2&gt;.OSI七层模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-3-gt-TCP-IP%E4%BA%94%E5%B1%82%EF%BC%88%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%EF%BC%89"><span class="toc-text">&lt;3&gt;.TCP&#x2F;IP五层（四层模型）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-4-gt-%E5%AF%B9%E5%B0%81%E8%A3%85%E5%88%86%E7%94%A8%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">&lt;4&gt;.对封装分用的理解</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93"><span class="toc-text">2.网络数据传输</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-1-gt-%E5%B1%80%E5%9F%9F%E7%BD%91"><span class="toc-text">&lt;1&gt;局域网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-2-gt-%E5%B9%BF%E5%9F%9F%E7%BD%91%E4%BC%A0%E8%BE%93%E6%B5%81%E7%A8%8B"><span class="toc-text">&lt;2&gt;广域网传输流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-UDP%E5%92%8CTCP"><span class="toc-text">3.UDP和TCP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-1-gt-UDP%E5%8D%8F%E8%AE%AE"><span class="toc-text">&lt;1&gt;UDP协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-2-gt-TCP%E5%8D%8F%E8%AE%AE-%E5%8F%AF%E9%9D%A0%E7%9A%84%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE"><span class="toc-text">&lt;2&gt;TCP协议(可靠的传输协议)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-3-gt-TCP%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-text">&lt;3&gt;TCP的总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-4-gt-UDP-VS-TCP"><span class="toc-text">&lt;4&gt;UDP VS TCP</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-MTU%E5%92%8CIP%E5%8D%8F%E8%AE%AE"><span class="toc-text">4.MTU和IP协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-1-gt-MTU%E5%8D%8F%E8%AE%AE"><span class="toc-text">&lt;1&gt;MTU协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-2-gt-IP%E5%8D%8F%E8%AE%AE"><span class="toc-text">&lt;2&gt;IP协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-HTTP%E5%92%8CHTTPS"><span class="toc-text">5.HTTP和HTTPS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-1-gt-HTTP"><span class="toc-text">&lt;1&gt;HTTP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-2-gt-HTTPS"><span class="toc-text">&lt;2&gt;HTTPS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86"><span class="toc-text">6.正向代理和反向代理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-1-gt-%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">&lt;1&gt;.正向代理服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-2-gt-%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">&lt;2&gt;.反向代理服务器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="toc-text">7.网络面试题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-1-gt-%E8%AF%B4%E4%B8%80%E8%AF%B4TCP-IP%E6%A8%A1%E5%9E%8B%EF%BC%8C%E4%BB%A5%E5%8F%8A%E9%83%BD%E5%81%9A%E4%BA%86%E5%93%AA%E4%BA%9B%E4%BA%8B%E6%83%85"><span class="toc-text">&lt;1&gt;.说一说TCP&#x2F;IP模型，以及都做了哪些事情</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-2-gt-%E8%AF%B4%E4%B8%80%E8%AF%B4TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="toc-text">&lt;2&gt;.说一说TCP的三次握手四次挥手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-3-gt-IPV4%E5%92%8CIPV6%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">&lt;3&gt;IPV4和IPV6的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-4-gt-TCP%E5%92%8CUDP%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">&lt;4&gt;TCP和UDP的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-5-gt-%E5%A6%82%E4%BD%95%E7%94%A8UDP%E8%BF%9B%E8%A1%8C%E5%8F%AF%E9%9D%A0%E4%BC%A0%E8%BE%93"><span class="toc-text">&lt;5&gt;如何用UDP进行可靠传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-6-gt-%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">&lt;6&gt;正向代理和反向代理的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-7-gt-%E8%AF%B4%E8%AF%B4HTTP%E5%92%8CHTTPS"><span class="toc-text">&lt;7&gt;说说HTTP和HTTPS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-8-gt-https%E4%B8%ADSSL%E6%8F%A1%E6%89%8B%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-text">&lt;8&gt;https中SSL握手的过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-9-gt-DNS%E8%A7%A3%E6%9E%90%EF%BC%88DNS%E6%89%BEIP%EF%BC%89"><span class="toc-text">&lt;9&gt;DNS解析（DNS找IP）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-10-gt-GET%E5%92%8CPOST%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">&lt;10&gt;GET和POST的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-11-gt-%E5%B8%B8%E8%A7%81%E7%9A%84%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-text">&lt;11&gt;常见的状态码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lt-12-gt-%E8%BE%93%E5%85%A5%E4%B8%80%E4%B8%AAURL%E5%88%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%EF%BC%8C%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88"><span class="toc-text">&lt;12&gt;输入一个URL到浏览器中，会发生什么</span></a></li></ol></li></ol></li></ol>
   </aside>
 
         
@@ -808,13 +491,6 @@
         onMouseOver="this.style.color= '#12B7F5'" 
         onMouseOut="this.style.color='#33333D'">
           <i class="iconfont  iconQQ "></i>
-      </a><a 
-        href="javascript:爬; "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#09BB07'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconwechat-fill "></i>
       </a><a 
         href="https://github.com/pikapi111 "
         target="_blank"
