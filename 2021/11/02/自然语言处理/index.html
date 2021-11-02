@@ -1,0 +1,389 @@
+
+
+<!DOCTYPE html>
+<html lang="en" color-mode=light>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> - DAN</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  
+  <meta name="description" content="自然语言处理1 文本向量化文本的向量化可谓是NLP进入...">
+  <meta name="author" content="dan">
+  <link rel="icon" href="/images/icons/dan.jpg" type="image/png" sizes="16x16">
+  
+  
+  
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_s6x2xcokxrl.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+    
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
+
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
+
+      
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: false,
+      fancybox: true,
+      pjax: false,
+      lazyload: {
+        enable: true,
+        only_post: 'false',
+        loading: '/images/theme/loading.gif'
+      },
+      donate: {
+        enable: false,
+        alipay: '',
+        wechat: ''
+      },
+      galleries: {
+        enable: false
+      },
+      fab: {
+        enable: true,
+        always_show: false
+      },
+      carrier: {
+        enable: true
+      },
+      daovoice: {
+        enable: false
+      },
+      preview: {
+        background: {
+          default: '[object Object]',
+          api: 'https://source.unsplash.com/random/1920x1080'
+        },
+        motto: {
+          default: '我在开了灯的床头下，想问问自己的心啊。',
+          typing: true,
+          api: 'https://v1.hitokoto.cn/?encode=text&c=i',
+          data_contents: ''
+        },
+      },
+      qrcode: {
+        enable: false,
+        type: 'image',
+        image: '',
+      },
+      toc: {
+        enable: true
+      },
+      scrollbar: {
+        type: 'default'
+      },
+      notification: {
+        enable: false,
+        delay: 4500,
+        list: '',
+        page_white_list: '',
+        page_black_list: ''
+      }
+    }
+  </script>
+
+  
+
+  
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="lock-screen">
+  <div class="loading"></div>
+  
+    
+
+
+  
+  
+
+<nav class="menu">
+  <div class="menu-wrap">
+    <div class="menu-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <ul class="menu-content"><li class="menu-item">
+        <a href="/ " class="underline "> 首页</a>
+      </li><li class="menu-item">
+        <a href="/galleries/ " class="underline "> 相册</a>
+      </li><li class="menu-item">
+        <a href="/archives/ " class="underline "> 归档</a>
+      </li><li class="menu-item">
+        <a href="/tags/ " class="underline "> 标签</a>
+      </li><li class="menu-item">
+        <a href="/categories/ " class="underline "> 分类</a>
+      </li><li class="menu-item">
+        <a href="/about/ " class="underline "> 关于</a>
+      </li></ul>
+    
+      <div class="menu-copyright">歪比巴卜</div>
+    
+  </div>
+</nav>
+  <main id="main">
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="/images/theme/cloud.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title"></h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>November 02, 2021</span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>3740</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <h1 id="自然语言处理"><a href="#自然语言处理" class="headerlink" title="自然语言处理"></a>自然语言处理</h1><h2 id="1-文本向量化"><a href="#1-文本向量化" class="headerlink" title="1 文本向量化"></a><strong>1 文本向量化</strong></h2><p>文本的向量化可谓是NLP进入深度学习时代的标志。所谓文本的向量化（embedding），就是将文本用一定维度的向量来表示，也可以理解为文本的数值化。通过embedding，文本的语义、句法等特征得以表征，便于下游模型的处理。</p>
+<p>【NLP-词向量】词向量的由来及本质</p>
+<p>【NLP-词向量】从模型结构到损失函数详解word2vec</p>
+<p>【NLP】 聊聊NLP中的attention机制</p>
+<p>【NLP】 理解NLP中网红特征抽取器Tranformer</p>
+<p>【NLP】 深入浅出解析BERT原理及其表征的内容</p>
+<p>【NLP】GPT：第一个引入Transformer的预训练模型</p>
+<p>【NLP】XLnet：GPT和BERT的合体，博采众长，所以更强</p>
+<h2 id="2-序列标注任务"><a href="#2-序列标注任务" class="headerlink" title="2 序列标注任务"></a>2 序列标注任务</h2><p>序列标注任务是NLP里非常基础和重要的任务，例如分词、NER等都属于序列标注任务，包括一些预测span的阅读理解任务也可归于此列。</p>
+<p>分词通常是中文自然语言处理的第一步（随着深度学习模型表征能力越来越强，慢慢证明，分词未必是必要的）；NER是非常重要和基础的信息抽取任务，在非常多的场景中都需要用到，例如聊天机器人中的槽位抽取、文本结构化过程中的实体抽取等等。</p>
+<p>早期的序列标注任务，例如分词，NER等主要是用HMM、CRF等机器学习模型；随着深度学习的兴起，LSTM+CRF变成序列标注任务的主流方法；当然，因为LSTM的若干缺点，不少NLP的从业者坚持使用CNN，因而基于膨胀卷积的序列标注模型得以提出。随着transformer的提出，利用BERT等预训练模型做NER这类任务开始变得流行，特别是抽取一些相对较长和复杂的实体，例如地址等。需要特别提出的是，有些情况下，正则匹配也是实体抽取的一种有效手段，可作为补充，例如时间实体等。</p>
+<h2 id="3-文本分类"><a href="#3-文本分类" class="headerlink" title="3 文本分类"></a>3 文本分类</h2><p>文本分类是一个不难理解的概念，即通过计算机对输入文本进行分类，例如判断“你真是个帅哥啊”这句话是褒义还是贬义。文本分类的应用场景很多，例如情感分类、机器人中的意图识别等。</p>
+<p>听上去，分类问题似乎是个不难解决的问题，实际上文本分类有它的难度。当类别非常多或者类别与类别之间差异很小时，文本分类就开始变得困难；再者，有时需要考虑额外特征才能分类正确，例如常常需要根据说话者语气，才能判断“你真是个帅哥啊”这句话是讽刺还是真心的赞美。</p>
+<p>早期有一些基于传统机器学习的文本分类，例如基于某种词语特征的的贝叶斯模型，SVM分类器等。</p>
+<p>随着深度学习的发展，LSTM+softmax/CNN+softmax模型变成了一种非常流行的文本分类架构，基于此Fasttext、textCNN等便捷高效的开源文本分类工具也开始流行。此外，结合Attention等技巧与概念能够一定程度的提高模型的效果。</p>
+<p>文本分类还有另外一种模式，即通过将文本向量化，再通过聚类获得类别，NLTK等开源NLP工具都有便捷的Doc2vec API。如果觉得效果不好，可以试试BERT的【CLS】向量。此外，还可以增加TF-IDF模块，构建更有表达能力的DocVec。</p>
+<h2 id="4-信息提取（information-extraction）"><a href="#4-信息提取（information-extraction）" class="headerlink" title="4 信息提取（information extraction）"></a>4 信息提取（information extraction）</h2><p>信息提取(IE)的目标是将文本信息转化为结构化信息，起初用于定位自然语言文档中的特定信息。广泛的看，信息提取其实是一个非常宽泛的概念，从文本提出感兴趣的内容就可以称为信息提取。在NLP中常常用实体抽取、关系抽取以及事件抽取等手段进行信息抽取。</p>
+<p>实体抽取是序列标记问题，上面已经介绍过，关系抽取以及事件抽取则通常转化为分类的任务。关系抽取常常需要先确认subject以及object。所以，关系抽取任务常常伴随着实体抽取的要求。</p>
+<p>早期，信息提取多使用正则和传统的机器学习方法。随着深度学习的快速发展，信息提取技术也开始迅速发展。实体抽取与关系抽取从Pipline的方式进化到end-to-end的方式。使用的特征抽取器也逐步进化，从LSTM/CNN到transformer。需要特别提出的是，BERT在信息抽取方面表现出色，基于BERT和阅读理解任务来做信息抽取，是一种非常别致的方式。</p>
+<h2 id="5-场景任务"><a href="#5-场景任务" class="headerlink" title="5 场景任务"></a>5 场景任务</h2><p>此外，NLP还有一些复杂的应用场景，他们可能是多种NLP技术的应用和综合，例如聊天机器人、知识图谱、文本搜索以及文本推荐系统等。</p>
+<p>搜索是NLP技术最早得到大规模应用的技术，例如百度搜索、知乎话题搜索以及各大互联网公司的query搜索技术，都涉及到语义匹配或文本分类技术。此外，大型的搜索引擎，知识图谱的搭建是必须的。</p>
+<p>推荐系统在一定层面来说是跟搜索场景相反的。搜索是基于用户的意图，在文本库中寻找匹配项；推荐则相反，通常基于积累的用户信息，给用户推荐可能感兴趣的内容。推荐系统常常涉及用户画像、标签定义等过程，需要一定程度的依赖NLP技术。</p>
+<p>聊天机器人是目前NLP技术应用最多的场景，基于NLP技术构建一个能够替代客服、销售、办公文员是这一任务的终极目标。目前，聊天机器人已经以各种形态出现在人们面前，有站在银行门口迎接顾客的迎宾机器人，有放在卧室床头的智能音箱，有呆在各个APP首页的助手机器人等等。在聊天机器人中，运用了文本分类、语义匹配、对话管理、实体识别等大量的NLP技术。要做好是一件难度大、超复杂的任务。</p>
+<p>知识图谱是AI时代一个非常重要基础设施，大规模结构化的知识网络的搭建，能够重塑很多的智能场景。</p>
+<p>词向量</p>
+<p>1、词的表示<br>1.1 离散表示（one-hot representation）</p>
+<p>把每个词表示为一个长向量。这个向量的维度是词表大小，向量中只有一个维度的值为1，其余维度为0，这个维度就代表了当前的词。</p>
+<p>面临着数据稀疏性和维度灾难的问题。但也有一个好处，就是在高维空间中，很多应用任务线性可分。</p>
+<p>1.2 分布式表示（distribution representation）</p>
+<p>将词转化成一种分布式表示，又称词向量（Word embedding）。将词表示成一个定长的连续的稠密向量。</p>
+<p>分布式表示优点：(1) 词之间存在相似关系，存在“距离”概念，这对很多自然语言处理的任务非常有帮助。(2) 词向量能够包含更多信息，并且每一维都有特定的含义。</p>
+<p>2、词向量学习方法<br>2.1 matrix factorization<br>例如，基于奇异值分解（SVD）的LSA算法</p>
+<p>2.2 神经网络语言模型 (NNLM)<br>2003年 Bengio 提出神经网络语言模型( neural network language model, NNLM)，由此产生“词向量”，使用具有一定维度的实数向量进行单词的分布式表示，解决了维度爆炸的问题，同时通过词向量可获取词之间的相似性。</p>
+<p>NNLM的任务是根据窗口大小内的上文来预测下一个词（从另一个角度看，它就是一个使用神经网络编码的n-gram模型）。</p>
+<p>word2vec</p>
+<p>Word2Vec是用一个一层的神经网络把one-hot形式的稀疏词向量映射称为一个K维的稠密向量的过程。为了加快模型训练速度，论文中利用了一些技巧，包括Hierarchical softmax，negative sampling, Huffman Tree等。</p>
+<p>Word2Vec里面有两个重要的模型CBOW模型(Continuous Bag-of-Words Model)与Skip-gram模型。</p>
+<p>Glove</p>
+<p>fasttext</p>
+<p>ELMo</p>
+<p>BERT</p>
+<p>XLNet</p>
+<p>ALBERT</p>
+<p>NER（命名体识别）</p>
+<p><em><strong>*命名实体识别（Named Entity Recognition，简称NER），又称作“专名识别”，是指识别文本中具有特定意义的实体，主要包括人名、地名、机构名、专有名词等。简单的讲，就是识别自然文本中的实体指称的边界和类别。*</strong></em></p>
+<p>有监督的学习方法：这一类方法需要利用大规模的已标注语料对模型进行参数训练。目前常用的模型或方法包括隐马尔可夫模型、语言模型、最大熵模型、支持向量机、决策树和条件随机场等。值得一提的是，基于条件随机场的方法是命名实体识别中最成功的方法。</p>
+<p>半监督的学习方法：这一类方法利用标注的小数据集（种子数据）自举学习。</p>
+<p>无监督的学习方法：这一类方法利用词汇资源（如 WordNet）等进行上下文聚类。</p>
+<p>混合方法：几种模型相结合或利用统计方法和人工总结的知识库。</p>
+<p>值得一提的是，由于深度学习在自然语言的广泛应用，基于深度学习的命名实体识别方法也展现出不错的效果，此类方法基本还是把命名实体识别当做序列标注任务来做，比较经典的方法是 LSTM+CRF、BiLSTM+CRF。</p>
+<p>随机过程:<br>设 T TT是一无限实数集, 把依赖于参数t ∈ T t\in Tt∈T的一族(无限多个)随机变量称为随机过程, 记为 X ( t ) , t ∈ T {X(t), t \in T}X(t),t∈T</p>
+<p>随机场: 从平面(随机过程)到向量空间(随机场)<br>若T TT是n nn维空间的某个子集, 即t tt是一个n nn维向量, 此时随机过程又称为随机场. 常见随机场有: 马尔可夫随机场(MRF), 吉布斯随机场(GRF), 条件随机场(CRF)和高斯随机场.</p>
+<p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211101204919908.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211101204919908</span></p>
+
+      </section>
+      <section class="extra">
+        
+        
+        
+        
+  <nav class="nav">
+    <a></a>
+    <a href="/2021/10/19/LeetCode/"><i class="iconfont iconright"></i></a>
+  </nav>
+
+      </section>
+      
+        <section class="comments">
+  
+    <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk" class="gitalk"></div>
+<script defer src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  window.onload = function () {
+    var gitalk = new Gitalk({
+      clientID: 'a16bdc09910ca579ff66',
+      clientSecret: '086f27f5afd7d2a31a81274b510ee927003db357',
+      id: window.location.pathname,
+      repo: 'pikapi111.github.io',
+      owner: 'pikapi111',
+      admin: 'pikapi111'
+    });
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        gitalk.render('gitalk');
+      });
+    } else {
+      gitalk.render('gitalk');
+    }
+  }
+</script>
+
+</section>
+      
+    </section>
+  </div>
+</article></div>
+      <div class="col-xl-3">
+        
+          
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86"><span class="toc-text">自然语言处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%96%87%E6%9C%AC%E5%90%91%E9%87%8F%E5%8C%96"><span class="toc-text">1 文本向量化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%BA%8F%E5%88%97%E6%A0%87%E6%B3%A8%E4%BB%BB%E5%8A%A1"><span class="toc-text">2 序列标注任务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB"><span class="toc-text">3 文本分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E4%BF%A1%E6%81%AF%E6%8F%90%E5%8F%96%EF%BC%88information-extraction%EF%BC%89"><span class="toc-text">4 信息提取（information extraction）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%9C%BA%E6%99%AF%E4%BB%BB%E5%8A%A1"><span class="toc-text">5 场景任务</span></a></li></ol></li></ol>
+  </aside>
+
+        
+      </div>
+    </div>
+  </div>
+</main>
+  
+
+<footer class="footer">
+  <div class="footer-social"><a 
+        href="tencent://message/?Menu=yes&uin=1079332052 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#12B7F5'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconQQ "></i>
+      </a><a 
+        href="https://github.com/pikapi111 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= " 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icongithub-fill "></i>
+      </a><a 
+        href="mailto:1079332052@qq.com"
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color=#FF3B00" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont iconmail"></i>
+      </a></div>
+  
+    <div class="footer-copyright">歪比巴卜</div>
+  
+</footer>
+  
+      <div class="fab fab-plus">
+    <i class="iconfont iconplus"></i>
+  </div>
+  
+  
+  <div class="fab fab-up">
+    <i class="iconfont iconcaret-up"></i>
+  </div>
+  
+  
+  
+    
+<script src="/js/color-mode.js"></script>
+
+  
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="/js/utils.js"></script>
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
