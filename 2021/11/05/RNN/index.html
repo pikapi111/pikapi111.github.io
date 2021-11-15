@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>关于 - DAN</title>
+  <title> - DAN</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  
+  <meta name="description" content="循环神经网络(Recurrent Neural Net...">
   <meta name="author" content="dan">
   <link rel="icon" href="/images/icons/dan.jpg" type="image/png" sizes="16x16">
   
@@ -125,23 +125,6 @@
     
 
 
-  <nav class="navbar">
-    <div class="left">
-      
-        <i class="iconfont iconhome j-navbar-back-home"></i>
-      
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-    </div>
-    <div class="center">关于</div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
-    </div>
-    
-  </nav>
-
   
   
 
@@ -161,7 +144,7 @@
       </li><li class="menu-item">
         <a href="/categories/ " class="underline "> 分类</a>
       </li><li class="menu-item">
-        <a href="/about/ " class="underline active"> 关于</a>
+        <a href="/about/ " class="underline "> 关于</a>
       </li></ul>
     
       <div class="menu-copyright">歪比巴卜</div>
@@ -175,25 +158,40 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/theme/2.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/images/theme/loading.gif" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">关于</h1>
+    <h1 class="head-title"></h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 03, 2021</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>November 05, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>0</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>952</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        
+        <h3 id="循环神经网络-Recurrent-Neural-Network"><a href="#循环神经网络-Recurrent-Neural-Network" class="headerlink" title="循环神经网络(Recurrent Neural Network)"></a>循环神经网络(<strong>Recurrent Neural Network</strong>)</h3><p>全连接神经网络图，我们可以看到输入层-隐藏层-输出层，他们每一层之间是相互独立地，(框框里面代表同一层)，每一次输入生成一个节点，同一层中每个节点之间又相互独立的话，那么我们每一次的输入其实跟前面的输入是没有关系地。这样在某一些任务中便不能很好的处理序列信息。</p>
+<p>比如一句话，虽然可以拆分成多个词语，但是需要将这些词语连起来理解才能得到一句话的意思。</p>
+<p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105132801780.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105132801780</span></p>
+<p>Xt是t时刻的输入，是一个[x0,x1,x2…xn]的向量<br>U是输入层到隐藏层的权重矩阵<br>St是t时刻的隐藏层的值<br>W是上一时刻的隐藏层的值传入到下一时刻的隐藏层时的权重矩阵<br>V是隐藏层到输出层的权重矩阵<br>Ot是t时刻RNN网络的输出<br>从上右图中可以看出这个RNN网络在t时刻接受了输入Xt之后，隐藏层的值是St，输出的值是Ot。但是从结构图中我们可以发现St并不单单只是由Xt决定，还与t-1时刻的隐藏层的值St-1有关。<br>这样，所谓的隐藏层的循环操作也就不难理解了，就是每一时刻计算一个隐藏层地值，然后再把该隐藏层地值传入到下一时刻，达到信息传递的目的。</p>
+<h3 id="循环神经网络-RNN的训练方法"><a href="#循环神经网络-RNN的训练方法" class="headerlink" title="循环神经网络 RNN的训练方法"></a>循环神经网络 RNN的训练方法</h3><p>训练RNN常用的一种方法是 BPTT算法（back-propagation through time），其本质也是BP算法（Backpropagation Algorithm），BP算法的本质其实又是梯度下降法</p>
+<p>可以看到sigmoid函数和tanh函数的导数始终是小于1地，如果把众多小于1的数连乘，那么就会出现梯度消失的情况</p>
+<p>其实在RNN中使用ReLU函数确实也是能解决梯度消失的问题地，但是又会引入一个新问题梯度爆炸</p>
+<h3 id="BiRNN-双向RNN"><a href="#BiRNN-双向RNN" class="headerlink" title="BiRNN 双向RNN"></a>BiRNN 双向RNN</h3><p>虽然RNN达到了传递信息的目的，但是只是将上一时刻的信息传递到了下一时刻，也就是只考虑到了当前节点前的信息，没有考虑到该节点后的信息。具体到NLP中，也就是一句话，不仅要考虑某个词上文的意思，也还要考虑下文的意思，这个时候普通的RNN就做不到了。于是就有了双向RNN（Bidirectional RNN）。</p>
+<p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105133029958.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105133029958</span></p>
+<p>递归神经网络(<strong>Recursive Neural Network</strong>)</p>
+
       </section>
       <section class="extra">
         
         
         
         
+  <nav class="nav">
+    <a href="/2021/11/05/%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/"><i class="iconfont iconleft"></i></a>
+    <a href="/2021/11/02/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"><i class="iconfont iconright"></i></a>
+  </nav>
+
       </section>
       
         <section class="comments">
@@ -235,7 +233,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-Recurrent-Neural-Network"><span class="toc-text">循环神经网络(Recurrent Neural Network)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN%E7%9A%84%E8%AE%AD%E7%BB%83%E6%96%B9%E6%B3%95"><span class="toc-text">循环神经网络 RNN的训练方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BiRNN-%E5%8F%8C%E5%90%91RNN"><span class="toc-text">BiRNN 双向RNN</span></a></li></ol>
   </aside>
 
         

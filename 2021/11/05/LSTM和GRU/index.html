@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Archive - DAN: 2021/4</title>
+  <title> - DAN</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  
+  <meta name="description" content="RNN无法处理长距离依赖问题，通俗点就是不能处理一些较...">
   <meta name="author" content="dan">
   <link rel="icon" href="/images/icons/dan.jpg" type="image/png" sizes="16x16">
   
@@ -125,23 +125,6 @@
     
 
 
-  <nav class="navbar">
-    <div class="left">
-      
-        <i class="iconfont iconhome j-navbar-back-home"></i>
-      
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-    </div>
-    <div class="center">归档</div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
-    </div>
-    
-  </nav>
-
   
   
 
@@ -169,107 +152,90 @@
   </div>
 </nav>
   <main id="main">
-  <section class="archive">
-    <div class="archive-container">
-      <div class="archive-post">
-        <h3 class="archive-total">归档: 15 篇</h3>
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="/images/theme/loading.gif" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title"></h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>November 05, 2021</span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>762</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <p>RNN无法处理长距离依赖问题，通俗点就是不能处理一些较长的序列数据，那么今天就来介绍一下两个能处理长距离依赖问题地RNN变种结构，LSTM和GRU</p>
+<h3 id="LSTM-（Long-short-term-memory）"><a href="#LSTM-（Long-short-term-memory）" class="headerlink" title="LSTM （Long short-term memory）"></a>LSTM （Long short-term memory）</h3><p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105134844576.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105134844576</span></p>
+<p>首先LSTM是由三个门来控制信息传递状态地，分别是红色方框对应的”忘记门“，绿色方框对应的”输入门“，和紫色方框对应的”输出门“。这三个门中一共包含3个sigmoid函数和2个tanh函数。使用sigmoid函数的原因是sigmoid函数能够将输入映射到[0,1]空间中，那么咱们就可以根据映射之后的概率对于上一时刻传递的信息进行有选择的去除，保留和输出。比如sigmoid函数的值为1也就是门的全开状态，则代表所有的信息都被保留，如果sigmoid函数为0也就是门的全闭状态，则代表所有的信息都不被保留。使用tanh函数是为了对数据进行处理，映射到[-1,1]的空间，当然也可以使用其他的激活函数，比如ReLU，至于效果谁好谁坏，我没有深究过，有研究表明在LSTM层数比较少的时候使用tanh比ReLU效果好</p>
+<p>LSTM问题<br>OK，看到这，相信你对于LSTM的结构也已经有了清楚的认识。你有没有发现LSTM需要训练的参数好像有点多，Wf,Wi,Wo,Wc,bf,bi,bo,bc,V，9个参数。这是LSTM的优点也是缺点，优点是有更多的参数对于模型进行调节，结果更加精确，缺点是，参数太多了，对于我这种没有公司和学校提供GPU服务器的个人NLP练习生来说，太消耗计算资源了…</p>
+<h3 id="GRU（Gate-Recurrent-Unit）"><a href="#GRU（Gate-Recurrent-Unit）" class="headerlink" title="GRU（Gate Recurrent Unit）"></a>GRU（Gate Recurrent Unit）</h3><p>GRU只有两个，一个是上图中的reset 重置门，一个是update 更新门。<br><strong>reset 重置门：</strong></p>
+<p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105135118660.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105135118660</span></p>
+
+      </section>
+      <section class="extra">
         
         
-          
-            <h3 class="archive-year">2021 年</h3>
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/11/08/deeprapper/">November 08</a>
-            <a class="archive-title" href="/2021/11/08/deeprapper/"></a>
-          </div>
+        
+        
+  <nav class="nav">
+    <a href="/2021/11/05/Attention/"><i class="iconfont iconleft"></i></a>
+    <a href="/2021/11/05/%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/"><i class="iconfont iconright"></i></a>
+  </nav>
+
+      </section>
+      
+        <section class="comments">
+  
+    <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk" class="gitalk"></div>
+<script defer src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  window.onload = function () {
+    var gitalk = new Gitalk({
+      clientID: 'a16bdc09910ca579ff66',
+      clientSecret: '086f27f5afd7d2a31a81274b510ee927003db357',
+      id: window.location.pathname,
+      repo: 'pikapi111.github.io',
+      owner: 'pikapi111',
+      admin: 'pikapi111'
+    });
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        gitalk.render('gitalk');
+      });
+    } else {
+      gitalk.render('gitalk');
+    }
+  }
+</script>
+
+</section>
+      
+    </section>
+  </div>
+</article></div>
+      <div class="col-xl-3">
         
           
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/11/05/Attention/">November 05</a>
-            <a class="archive-title" href="/2021/11/05/Attention/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/11/05/LSTM%E5%92%8CGRU/">November 05</a>
-            <a class="archive-title" href="/2021/11/05/LSTM%E5%92%8CGRU/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/11/05/%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/">November 05</a>
-            <a class="archive-title" href="/2021/11/05/%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/11/05/RNN/">November 05</a>
-            <a class="archive-title" href="/2021/11/05/RNN/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/11/02/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/">November 02</a>
-            <a class="archive-title" href="/2021/11/02/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/10/19/LeetCode/">October 19</a>
-            <a class="archive-title" href="/2021/10/19/LeetCode/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/10/12/java/">October 12</a>
-            <a class="archive-title" href="/2021/10/12/java/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">July 13</a>
-            <a class="archive-title" href="/2021/07/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">网络</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/06/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">June 30</a>
-            <a class="archive-title" href="/2021/06/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/06/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">June 30</a>
-            <a class="archive-title" href="/2021/06/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/04/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">April 28</a>
-            <a class="archive-title" href="/2021/04/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/04/17/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">April 17</a>
-            <a class="archive-title" href="/2021/04/17/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/">数学公式</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/04/16/python/">April 16</a>
-            <a class="archive-title" href="/2021/04/16/python/">python</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/04/03/helloworld/">April 03</a>
-            <a class="archive-title" href="/2021/04/03/helloworld/">Hello World</a>
-          </div>
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#LSTM-%EF%BC%88Long-short-term-memory%EF%BC%89"><span class="toc-text">LSTM （Long short-term memory）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GRU%EF%BC%88Gate-Recurrent-Unit%EF%BC%89"><span class="toc-text">GRU（Gate Recurrent Unit）</span></a></li></ol>
+  </aside>
+
         
       </div>
     </div>
-  </section>
+  </div>
 </main>
   
 

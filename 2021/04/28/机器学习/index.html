@@ -181,7 +181,7 @@
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 28, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>9420</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>9540</span>
     </div>
   </div>
 </section>
@@ -623,7 +623,8 @@
 <p>CART 算法也包含了树的修剪。CART 算法从完全生长的决策树底端剪去一些子树，使得模型更加简单。而修剪这些子树时，是每次去除一颗，逐步修剪直到根节点，从而形成一个子树序列。最后，对该子树序列进行交叉验证，再选出最优的子树作为最终决策树。</p>
 <p>离散值做连续值处理</p>
 <p>缺失值处理</p>
-<h2 id="集成学习"><a href="#集成学习" class="headerlink" title="集成学习"></a>集成学习</h2><h3 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h3><p>Boosting是一簇可将弱学习器提升为强学习器的算法。其工作机制为：先从初始训练集训练出一个基学习器，再根据基学习器的表现对样本分布进行调整，使得先前的基学习器做错的训练样本在后续收到更多的关注，然后基于调整后的样本分布来训练下一个基学习器；如此重复进行，直至基学习器数目达到实现指定的值T，或整个集成结果达到退出条件，然后将这些学习器进行加权结合。</p>
+<h2 id="集成学习"><a href="#集成学习" class="headerlink" title="集成学习"></a>集成学习</h2><p><strong>集成学习（ensemble learning）</strong> 通过构建并结合多个学习器来完成学习任务，有时也被称为 <strong>多分类器系统（multi-classifier system）</strong>、<strong>基于委员会的学习（committee-based learning）</strong> 等</p>
+<h3 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h3><p>Boosting是一簇可将弱学习器提升为强学习器的算法。其工作机制为：先从初始训练集训练出一个基学习器，再根据基学习器的表现对样本分布进行调整，使得先前的基学习器做错的训练样本在后续收到更多的关注，然后基于调整后的样本分布来训练下一个基学习器；如此重复进行，直至基学习器数目达到实现指定的值T，或整个集成结果达到退出条件，然后将这些学习器进行加权结合。</p>
 <h3 id="1、AdaBoost"><a href="#1、AdaBoost" class="headerlink" title="1、AdaBoost"></a>1、AdaBoost</h3><p>AdaBoost 是Boosting中的经典算法，其主要应用于二分类问题。</p>
 <p>Adaboost 算法采用调整样本权重的方式来对样本分布进行调整，即提高前一轮个体学习器错误分类的样本的权重，而降低那些正确分类的样本的权重，这样就能使得错误分类的样本可以受到更多的关注，从而在下一轮中可以正确分类，使得分类问题被一系列的弱分类器“分而治之”。对于组合方式，AdaBoost采用加权多数表决的方法，具体地，加大分类误差率小的若分类器的权值，减小分类误差率大的若分类器的权值，从而调整他们在表决中的作用。</p>
 <h3 id="2、提升树-Boosting-Tree"><a href="#2、提升树-Boosting-Tree" class="headerlink" title="2、提升树(Boosting Tree)"></a>2、提升树(Boosting Tree)</h3><p>提升树是以分类树或回归树为基本分类器的提升方法。</p>

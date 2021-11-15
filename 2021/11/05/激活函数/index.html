@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>关于 - DAN</title>
+  <title> - DAN</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  
+  <meta name="description" content="激活函数(active function)神经网络中的...">
   <meta name="author" content="dan">
   <link rel="icon" href="/images/icons/dan.jpg" type="image/png" sizes="16x16">
   
@@ -125,23 +125,6 @@
     
 
 
-  <nav class="navbar">
-    <div class="left">
-      
-        <i class="iconfont iconhome j-navbar-back-home"></i>
-      
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-    </div>
-    <div class="center">关于</div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
-    </div>
-    
-  </nav>
-
   
   
 
@@ -161,7 +144,7 @@
       </li><li class="menu-item">
         <a href="/categories/ " class="underline "> 分类</a>
       </li><li class="menu-item">
-        <a href="/about/ " class="underline active"> 关于</a>
+        <a href="/about/ " class="underline "> 关于</a>
       </li></ul>
     
       <div class="menu-copyright">歪比巴卜</div>
@@ -175,25 +158,39 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/theme/2.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="/images/theme/1.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">关于</h1>
+    <h1 class="head-title"></h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>April 03, 2021</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>November 05, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>0</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>599</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        
+        <h2 id="激活函数-active-function"><a href="#激活函数-active-function" class="headerlink" title="激活函数(active function)"></a>激活函数(active function)</h2><p>神经网络中的每个神经元节点接受上一层神经元的输出值作为本神经元的输入值，并将输入值传递给下一层，输入层神经元节点会将输入属性值直接传递给下一层（隐层或输出层）。在多层神经网络中，上层节点的输出和下层节点的输入之间具有一个函数关系，这个函数称为激活函数（又称激励函数）。</p>
+<p>如果不用激励函数（其实相当于激励函数是f(x) = x），在这种情况下你每一层节点的输入都是上层输出的线性函数，很容易验证，无论你神经网络有多少层，输出都是输入的线性组合，与没有隐藏层效果相当，这种情况就是最原始的感知机（Perceptron）了，那么网络的逼近能力就相当有限。正因为上面的原因，我们决定引入非线性函数作为激励函数，这样深层神经网络表达能力就更加强大（不再是输入的线性组合，而是几乎可以逼近任意函数）。</p>
+<h3 id="sigmoid"><a href="#sigmoid" class="headerlink" title="sigmoid"></a>sigmoid</h3><p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105134125245.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105134125245</span></p>
+<h3 id="tanh"><a href="#tanh" class="headerlink" title="tanh"></a>tanh</h3><p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105134222966.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105134222966</span></p>
+<h3 id="Relu"><a href="#Relu" class="headerlink" title="Relu"></a>Relu</h3><p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105134237663.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105134237663</span></p>
+<p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105134252900.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105134252900</span></p>
+<h3 id="ELU"><a href="#ELU" class="headerlink" title="ELU"></a>ELU</h3><p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105134307022.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105134307022</span></p>
+<h3 id="softmax"><a href="#softmax" class="headerlink" title="softmax"></a>softmax</h3><p>softmax函数，又称<strong>归一化指数函数。</strong>它是二分类函数sigmoid在多分类上的推广，目的是将多分类的结果以概率的形式展现出来</p>
+<p><img   class="lazyload" data-original="/.98//Users\34301\AppData\Roaming\Typora\typora-user-images\image-20211105134441252.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ><span class="image-caption">image-20211105134441252</span></p>
+
       </section>
       <section class="extra">
         
         
         
         
+  <nav class="nav">
+    <a href="/2021/11/05/LSTM%E5%92%8CGRU/"><i class="iconfont iconleft"></i></a>
+    <a href="/2021/11/05/RNN/"><i class="iconfont iconright"></i></a>
+  </nav>
+
       </section>
       
         <section class="comments">
@@ -235,7 +232,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0-active-function"><span class="toc-text">激活函数(active function)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#sigmoid"><span class="toc-text">sigmoid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tanh"><span class="toc-text">tanh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Relu"><span class="toc-text">Relu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ELU"><span class="toc-text">ELU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#softmax"><span class="toc-text">softmax</span></a></li></ol></li></ol>
   </aside>
 
         
